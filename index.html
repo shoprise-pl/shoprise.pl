@@ -19,164 +19,7 @@
 <meta name="description" content="Shoprise buduje sklepy na Shopify i Shoperze oraz prowadzi kampanie Google Ads i Meta Ads. Od pierwszego zamówienia po sprzedaż za granicą.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<style>
-:root{
-  --ink:#22354A;      /* SHOP navy */
-  --blue:#4E8FBF;     /* R */
-  --air:#7BC0DF;      /* SE */
-  --ice:#A9D6EE;      /* strzałka */
-  --frost:#EAF3F9;
-  --paper:#FFFFFF;
-  --bg:#F5F8FB;
-  --coin:#F2C864;
-  --skin:#F2C9A4;
-  --radius:20px;
-  --pill:999px;
-  --sh-soft:0 8px 30px rgba(34,53,74,.09);
-  --sh-lift:0 20px 46px rgba(34,53,74,.18);
-}
-*{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth;color-scheme:light;background:var(--bg)}
-body{font-family:'Inter',system-ui,sans-serif;color:var(--ink);background:var(--bg) !important;line-height:1.6;-webkit-font-smoothing:antialiased}
-section{background:var(--bg)}
-section#uslugi{background:#FFFFFF}
-section#kontakt{background:var(--bg)}
-a{color:inherit}
-:focus-visible{outline:3px solid var(--air);outline-offset:3px;border-radius:6px}
-.container{max-width:1120px;margin:0 auto;padding:0 24px}
-h1,h2,h3{font-family:'Sora'}
-
-/* ---- buttons ---- */
-.btn{display:inline-flex;align-items:center;gap:.5em;font-weight:600;font-size:1rem;padding:.85em 1.6em;border-radius:var(--pill);border:none;cursor:pointer;text-decoration:none;transition:transform .15s,box-shadow .15s,background-color .15s}
-.btn .arr{transition:transform .18s}
-.btn:hover .arr{transform:translateX(4px)}
-.btn:active{transform:scale(.97)}
-.btn-blue{background:var(--blue);color:#fff;box-shadow:0 6px 18px rgba(78,143,191,.4)}
-.btn-blue:hover{background:#3F7DAB;transform:translateY(-2px);box-shadow:0 12px 28px rgba(78,143,191,.5)}
-.btn-line{background:#fff;color:var(--ink);border:2px solid #D8E4EE}
-.btn-line:hover{border-color:var(--blue);transform:translateY(-2px)}
-
-/* ---- nav ---- */
-header{position:sticky;top:0;z-index:50;background:rgba(245,248,251,.9);backdrop-filter:blur(10px);border-bottom:1px solid #E3ECF3}
-.nav{display:flex;align-items:center;justify-content:space-between;padding:14px 24px;max-width:1120px;margin:0 auto}
-.nav ul{display:flex;gap:26px;list-style:none;align-items:center}
-.nav a{text-decoration:none;font-weight:500;font-size:.95rem}
-.nav ul a:not(.btn):hover{color:var(--blue)}
-.burger{display:none;background:none;border:none;cursor:pointer;padding:8px}
-.burger span{display:block;width:24px;height:2.5px;background:var(--ink);margin:5px 0;border-radius:2px}
-
-/* ---- hero ---- */
-.hero{padding:64px 0 0;text-align:center;position:relative;overflow:hidden;background:var(--bg)}
-.eyebrow{display:inline-flex;gap:.5em;background:var(--frost);color:var(--blue);font-weight:700;font-size:.8rem;letter-spacing:.06em;text-transform:uppercase;padding:.6em 1.2em;border-radius:var(--pill)}
-.hero h1{font-weight:800;font-size:clamp(2rem,4.6vw,3.3rem);line-height:1.14;letter-spacing:-.02em;margin:22px auto 16px;max-width:15em}
-.hero h1 em{font-style:normal;color:var(--blue)}
-.hero .lead{font-size:1.1rem;color:#54687C;max-width:36em;margin:0 auto 28px}
-.hero-actions{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-bottom:14px}
-.trustline{display:flex;gap:20px;justify-content:center;flex-wrap:wrap;font-size:.9rem;color:#54687C;font-weight:500;margin-bottom:28px}
-.trustline svg{vertical-align:-3px;margin-right:5px}
-
-/* scena z postaciami */
-.scene{position:relative;max-width:860px;margin:0 auto;padding:10px 16px 0}
-.scene svg{width:100%;height:auto;display:block}
-.bob{animation:bob 5s ease-in-out infinite;transform-origin:center}
-.bob2{animation:bob 6s .7s ease-in-out infinite}
-.bob3{animation:bob 7s 1.2s ease-in-out infinite}
-.pop{animation:pop 3.2s ease-in-out infinite;transform-origin:center}
-.spin{animation:spinx 4.5s ease-in-out infinite;transform-origin:center}
-@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
-@keyframes pop{0%,72%,100%{transform:scale(1)}80%{transform:scale(1.14)}88%{transform:scale(.98)}}
-@keyframes spinx{0%,100%{transform:scaleX(1)}50%{transform:scaleX(.4)}}
-
-/* pasek ikon (marquee) */
-.marq{overflow:hidden;background:var(--ink);padding:18px 0;position:relative}
-.marq-track{display:flex;gap:56px;width:max-content;animation:marq 26s linear infinite}
-.marq .it{display:flex;align-items:center;gap:12px;color:#CFE4F2;font-weight:600;font-size:.95rem;white-space:nowrap}
-@keyframes marq{to{transform:translateX(-50%)}}
-
-/* ---- sekcje ---- */
-section{padding:72px 0}
-.sec-head{max-width:640px;margin:0 auto 46px;text-align:center}
-.sec-head h2{font-weight:800;font-size:clamp(1.7rem,3.4vw,2.3rem);letter-spacing:-.02em;margin:16px 0 12px}
-.sec-head p{color:#54687C;font-size:1.03rem}
-
-/* usługi */
-.svc-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
-.svc{background:#fff;border-radius:var(--radius);padding:28px 24px;box-shadow:var(--sh-soft);transition:transform .2s,box-shadow .2s;position:relative;overflow:hidden}
-.svc:hover{transform:translateY(-6px);box-shadow:var(--sh-lift)}
-.svc:hover .ico{transform:translateY(-4px) rotate(-4deg)}
-.svc .ico{width:58px;height:58px;border-radius:16px;display:flex;align-items:center;justify-content:center;background:var(--frost);margin-bottom:18px;transition:transform .25s}
-.svc h3{font-size:1.06rem;font-weight:700;margin-bottom:9px}
-.svc p{font-size:.94rem;color:#54687C}
-
-/* proces */
-.process{background:linear-gradient(150deg,var(--ink) 0%,#2C4763 100%);color:#fff;position:relative;overflow:hidden}
-.process .sec-head h2{color:#fff}
-.process .sec-head p{color:#C6D8E6}
-.process .eyebrow{background:rgba(255,255,255,.12);color:var(--ice)}
-.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;position:relative;z-index:1}
-.step{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);border-radius:var(--radius);padding:26px 22px}
-.step .n{width:44px;height:44px;border-radius:13px;background:var(--air);display:flex;align-items:center;justify-content:center;margin-bottom:16px}
-.step h3{font-size:1.04rem;font-weight:700;margin-bottom:8px}
-.step p{font-size:.92rem;color:#C6D8E6}
-.stairs-bg{position:absolute;right:-30px;bottom:-14px;opacity:.10;pointer-events:none}
-
-/* kontakt */
-.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:52px;align-items:start}
-.contact-info h2{font-weight:800;font-size:clamp(1.6rem,3vw,2.2rem);letter-spacing:-.02em;margin:16px 0 14px}
-.contact-info p{color:#54687C;margin-bottom:22px;max-width:30em}
-.check{display:flex;gap:12px;align-items:flex-start;margin-bottom:14px;font-size:.97rem}
-.check svg{flex:none;margin-top:3px}
-.check b{font-weight:700}
-.hero-art{width:100%;max-width:860px;border-radius:22px;box-shadow:0 22px 50px rgba(34,53,74,.16);display:block;margin:0 auto}
-.mini-art{width:100%;max-width:380px;border-radius:18px;box-shadow:var(--sh-soft);margin-top:26px;display:block}
-.bobimg{animation:bob 7s ease-in-out infinite}
-form.card{background:#fff;border-radius:var(--radius);box-shadow:var(--sh-lift);padding:30px}
-.avail{display:flex;align-items:center;gap:10px;font-size:.9rem;font-weight:600;color:#54687C;margin-bottom:20px}
-.dot{width:10px;height:10px;border-radius:50%;background:#3EC98F;animation:pulse 2.4s ease-in-out infinite}
-@keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(62,201,143,.45)}55%{box-shadow:0 0 0 9px rgba(62,201,143,0)}}
-.field{margin-bottom:17px}
-.field label{display:block;font-weight:600;font-size:.9rem;margin-bottom:7px}
-.field input,.field textarea{width:100%;font:inherit;padding:.8em 1em;border:1.5px solid #D8E4EE;border-radius:12px;background:#FBFDFE;color:var(--ink);transition:border-color .15s,box-shadow .15s}
-.field textarea{min-height:104px;resize:vertical}
-.field input:focus,.field textarea:focus{outline:none;border-color:var(--blue);box-shadow:0 0 0 4px rgba(78,143,191,.16)}
-.form-ok{display:none;background:#E5F7EF;color:#14603F;font-weight:600;border-radius:12px;padding:13px 16px;margin-top:14px}
-.form-note{font-size:.8rem;color:#7A8CA0;margin-top:13px}
-
-/* footer */
-footer{background:var(--bg);border-top:1px solid #E3ECF3;padding:40px 0;color:#54687C}
-.foot{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;align-items:center}
-.foot ul{display:flex;gap:22px;list-style:none;flex-wrap:wrap}
-.foot a{text-decoration:none;font-size:.92rem}
-.foot a:hover{color:var(--blue);text-decoration:underline}
-.foot small{font-size:.82rem;width:100%;text-align:center;margin-top:8px;color:#8FA1B4}
-
-/* reveal */
-.reveal{opacity:0;transform:translateY(26px);transition:opacity .6s ease,transform .6s ease}
-.reveal.in{opacity:1;transform:none}
-/* rysowanie strzałki logo */
-.draw{stroke-dasharray:60;stroke-dashoffset:60;animation:draw 1s .5s ease forwards}
-@keyframes draw{to{stroke-dashoffset:0}}
-
-@media (prefers-reduced-motion:reduce){
-  *{animation:none!important;transition:none!important}
-  .reveal{opacity:1;transform:none}
-  html{scroll-behavior:auto}
-}
-@media (max-width:960px){
-  .svc-grid{grid-template-columns:1fr 1fr}
-  .steps{grid-template-columns:1fr 1fr}
-  .contact-grid{grid-template-columns:1fr}
-}
-@media (max-width:640px){
-  .nav ul{display:none;position:absolute;top:100%;left:0;right:0;background:#fff;flex-direction:column;gap:0;padding:10px 0;box-shadow:var(--sh-soft)}
-  .nav ul.open{display:flex}
-  .nav ul li{width:100%}
-  .nav ul a{display:block;padding:14px 24px}
-  .burger{display:block}
-  .svc-grid,.steps{grid-template-columns:1fr}
-  section{padding:56px 0}
-}
-</style>
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
@@ -271,6 +114,8 @@ footer{background:var(--bg);border-top:1px solid #E3ECF3;padding:40px 0;color:#5
     <ul id="menu">
       <li><a href="#uslugi">Usługi</a></li>
       <li><a href="#proces">Jak działamy</a></li>
+      <li><a href="#cennik">Cennik</a></li>
+      <li><a href="#faq">FAQ</a></li>
       <li><a class="btn btn-blue" style="padding:.55em 1.2em;font-size:.92rem" href="#kontakt">Bezpłatna wycena</a></li>
     </ul>
   </div>
@@ -372,6 +217,139 @@ footer{background:var(--bg);border-top:1px solid #E3ECF3;padding:40px 0;color:#5
   </div>
 </section>
 
+<section id="liczby" style="padding:56px 0">
+  <div class="container">
+    <div class="stats">
+      <div class="stat reveal"><div class="num">9</div><div class="lbl">rynków UE, na których sprzedajemy</div></div>
+      <div class="stat reveal"><div class="num">24<em>h</em></div><div class="lbl">maksymalny czas odpowiedzi</div></div>
+      <div class="stat reveal"><div class="num">14 <em>dni</em></div><div class="lbl">średnio do startu sklepu</div></div>
+      <div class="stat reveal"><div class="num">2</div><div class="lbl">osoby — zero pośredników i działów</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="cennik">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Cennik</span>
+      <h2>Wiesz, za co płacisz — zanim zaczniemy</h2>
+      <p>Dwa cenniki, zero gwiazdek drobnym drukiem. Rozliczenie zawsze tak samo: 50% zaliczki, 50% po odbiorze.</p>
+    </div>
+    <div class="cennik-choice">
+      <a class="choice reveal" href="sklepy-internetowe.html">
+        <span class="cico"><svg width="36" height="36"><use href="#i-store"/></svg></span>
+        <h3>Sklepy internetowe</h3>
+        <p>Shopify i Shoper — z płatnościami, dostawami i opcją kampanii Google & Meta Ads od startu.</p>
+        <span class="from">od 2450 zł</span>
+        <span class="go">Zobacz pakiety <span class="arr">→</span></span>
+      </a>
+      <a class="choice reveal" href="strony-internetowe.html">
+        <span class="cico"><svg width="36" height="36"><use href="#i-browser"/></svg></span>
+        <h3>Strony internetowe</h3>
+        <p>Wizytówka, strona firmowa lub rozbudowany serwis — szybkie, lekkie i widoczne w Google.</p>
+        <span class="from">od 1050 zł</span>
+        <span class="go">Zobacz pakiety <span class="arr">→</span></span>
+      </a>
+    </div>
+    <p class="price-note reveal">Nie wiesz, czego potrzebujesz? Napisz — po bezpłatnej analizie doradzimy, a jeśli czegoś nie potrzebujesz, powiemy wprost.</p>
+  </div>
+</section>
+
+<section id="dlakogo" style="background:#FFFFFF">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Dla kogo</span>
+      <h2>Robimy sklepy m.in. dla takich firm jak Twoja</h2>
+      <p>Sprzedajesz stacjonarnie i masz dobry produkt? To wystarczy na start.</p>
+    </div>
+    <div class="who-grid reveal">
+      <span class="who"><svg width="22" height="22"><use href="#i-box"/></svg>Meble na wymiar</span>
+      <span class="who"><svg width="22" height="22"><use href="#i-star"/></svg>Odzież i akcesoria dziecięce</span>
+      <span class="who"><svg width="22" height="22"><use href="#i-bag"/></svg>Butiki i sklepy stacjonarne</span>
+      <span class="who"><svg width="22" height="22"><use href="#i-coin"/></svg>Lokalni producenci</span>
+      <span class="who"><svg width="22" height="22"><use href="#i-store"/></svg>Wypożyczalnie</span>
+      <span class="who"><svg width="22" height="22"><use href="#i-cart"/></svg>Rękodzieło i personalizacja</span>
+    </div>
+  </div>
+</section>
+
+<section id="dlaczego">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Dlaczego my</span>
+      <h2>Mała agencja, konkretna robota</h2>
+      <p>Jest nas dwóch. Nie przełączamy Cię między działami — rozmawiasz z ludźmi, którzy robią Twój sklep.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why reveal">
+        <div class="ico"><svg width="28" height="28"><use href="#i-stairs"/></svg></div>
+        <div><h3>Sprzedajemy na 9 rynkach UE</h3>
+        <p>Prowadzimy e-commerce z branży dziecięcej za granicą. Wiemy, co działa, bo sami wydajemy budżety reklamowe.</p></div>
+      </div>
+      <div class="why reveal">
+        <div class="ico"><svg width="28" height="28"><use href="#i-pin"/></svg></div>
+        <div><h3>Jesteśmy stąd</h3>
+        <p>Wieruszów, Wieluń, Sieradz, Kalisz — możemy się po prostu spotkać. Znamy lokalne firmy i ich klientów.</p></div>
+      </div>
+      <div class="why reveal">
+        <div class="ico"><svg width="28" height="28"><use href="#i-search"/></svg></div>
+        <div><h3>Mówimy wprost</h3>
+        <p>Jeśli Twój produkt nie ma potencjału w internecie albo czegoś nie potrzebujesz — usłyszysz to od nas, zanim wydasz złotówkę.</p></div>
+      </div>
+      <div class="why reveal">
+        <div class="ico"><svg width="28" height="28"><use href="#i-coin"/></svg></div>
+        <div><h3>Zarabiamy, gdy Ty zarabiasz</h3>
+        <p>Część naszego wynagrodzenia to prowizja od wyników. Zależy nam na Twojej sprzedaży tak samo jak Tobie.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="faq" style="background:#FFFFFF">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="eyebrow">FAQ</span>
+      <h2>Częste pytania</h2>
+      <p>To, o co pytają nas właściciele firm przed startem.</p>
+    </div>
+    <div class="faq-list reveal">
+      <details>
+        <summary>Ile kosztuje utrzymanie sklepu internetowego?<span class="plus">+</span></summary>
+        <p class="ans">Poza wdrożeniem sklep ma stałe koszty: abonament platformy (Shoper od ok. 100 zł/mc, Shopify od ok. 39 USD/mc), domena ok. 100 zł/rok i prowizje operatora płatności. Wszystko pokazujemy w wycenie — <b>bez ukrytych kosztów</b>.</p>
+      </details>
+      <details>
+        <summary>Jakie metody płatności będzie miał mój sklep?<span class="plus">+</span></summary>
+        <p class="ans">Takie, jakie wybierzesz: BLIK, szybkie przelewy (Przelewy24, PayU, Tpay), karty, Apple Pay i Google Pay, a w razie potrzeby płatność za pobraniem. Doradzimy zestaw, który ma sens dla Twoich klientów.</p>
+      </details>
+      <details>
+        <summary>A dostawy?<span class="plus">+</span></summary>
+        <p class="ans">Paczkomaty InPost, kurierzy (DPD, DHL, UPS), Poczta Polska i brokerzy typu Furgonetka. Konfigurujemy cenniki dostaw i darmową wysyłkę od wybranej kwoty koszyka.</p>
+      </details>
+      <details>
+        <summary>Czy będę mógł samodzielnie dodawać produkty?<span class="plus">+</span></summary>
+        <p class="ans">Tak. Shoper i Shopify mają proste panele — dodasz produkt, zmienisz cenę czy opis bez naszej pomocy. Na start robimy <b>krótkie szkolenie</b>, a jak wolisz to oddelegować, zajmiemy się tym w ramach prowadzenia sklepu.</p>
+      </details>
+      <details>
+        <summary>Jak wygląda rozliczenie?<span class="plus">+</span></summary>
+        <p class="ans">Wdrożenie sklepu to ryczałt: <b>50% zaliczki, 50% po odbiorze</b>. Prowadzenie i kampanie rozliczamy miesięcznie — część wynagrodzenia to prowizja od wyników, więc gramy do jednej bramki. Szczegóły zawsze na piśmie, w umowie.</p>
+      </details>
+      <details>
+        <summary>Ile trwa uruchomienie sklepu?<span class="plus">+</span></summary>
+        <p class="ans">Prosty sklep — ok. 2 tygodni od otrzymania materiałów (zdjęcia, opisy, logo). Większe wdrożenia z integracjami — do 3–4 tygodni. Dokładny termin dostajesz w wycenie i trzymamy się go.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section class="cta-band reveal">
+  <svg class="stairs-bg" width="360" height="300" viewBox="0 0 48 48"><use href="#i-stairs"/></svg>
+  <div class="container">
+    <h2>Twoja konkurencja już sprzedaje online</h2>
+    <p>Każdy miesiąc bez sklepu to klienci, którzy kupują gdzie indziej. Sprawdźmy bezpłatnie, ile możesz na tym zyskać.</p>
+    <a class="btn btn-blue" href="#kontakt">Zaróbmy razem pieniądze <span class="arr">→</span></a>
+  </div>
+</section>
+
 <section id="kontakt">
   <div class="container contact-grid">
     <div class="contact-info reveal">
@@ -421,59 +399,17 @@ footer{background:var(--bg);border-top:1px solid #E3ECF3;padding:40px 0;color:#5
     <ul>
       <li><a href="#uslugi">Usługi</a></li>
       <li><a href="#proces">Jak działamy</a></li>
+      <li><a href="#cennik">Cennik</a></li>
+      <li><a href="#faq">FAQ</a></li>
       <li><a href="#kontakt">Kontakt</a></li>
     </ul>
-    <small style="text-algin:center;"> biuro@shoprise.pl · +48 696851523</small>
+    <small style="text-align:center;"> biuro@shoprise.pl · +48 696851523</small>
     <small>© 2026 Shoprise · Sklepy internetowe · Google Ads · Meta Ads</small>
   </div>
 </footer>
 
 <style>@keyframes wave{0%,100%{transform:rotate(0)}40%{transform:rotate(-16deg)}70%{transform:rotate(6deg)}}</style>
 
-<script>
-function toggleMenu(btn){
-  const m=document.getElementById('menu');
-  const open=m.classList.toggle('open');
-  btn.setAttribute('aria-expanded',open);
-}
-document.querySelectorAll('#menu a').forEach(a=>a.addEventListener('click',()=>document.getElementById('menu').classList.remove('open')));
-
-async function sendForm(e){
-  e.preventDefault();
-  const f=e.target;
-  if(!f.checkValidity()){f.reportValidity();return false;}
-  const btn=f.querySelector('button[type="submit"]');
-  const ok=document.getElementById('form-ok');
-  btn.disabled=true; btn.textContent='Wysyłam…';
-  try{
-    const res=await fetch(f.action,{method:'POST',body:new FormData(f),headers:{'Accept':'application/json'}});
-    if(res.ok){
-      ok.textContent='Dzięki! Wiadomość wysłana — odezwiemy się w ciągu 24 godzin.';
-      ok.style.display='block';
-      f.querySelectorAll('input,textarea,button').forEach(el=>el.disabled=true);
-    }else{
-      ok.textContent='Ups, coś nie zadziałało. Napisz do nas bezpośrednio: biuro@shoprise.pl';
-      ok.style.background='#FDECEC'; ok.style.color='#9B2C2C'; ok.style.display='block';
-      btn.disabled=false; btn.innerHTML='Wyślij wiadomość <span class="arr">→</span>';
-    }
-  }catch(err){
-    ok.textContent='Brak połączenia. Napisz do nas: biuro@shoprise.pl';
-    ok.style.background='#FDECEC'; ok.style.color='#9B2C2C'; ok.style.display='block';
-    btn.disabled=false; btn.innerHTML='Wyślij wiadomość <span class="arr">→</span>';
-  }
-  return false;
-}
-
-/* podwojenie zawartości marquee, żeby pętla była płynna */
-const mq=document.getElementById('marq');
-mq.innerHTML+=mq.innerHTML;
-
-/* reveal */
-const io=new IntersectionObserver(es=>{
-  es.forEach(x=>{if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target);}});
-},{threshold:.08,rootMargin:'0px 0px -40px 0px'});
-document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
-setTimeout(()=>document.querySelectorAll('.reveal:not(.in)').forEach(el=>el.classList.add('in')),1200);
-</script>
+<script src="script.js"></script>
 </body>
 </html>
