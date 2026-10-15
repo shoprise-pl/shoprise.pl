@@ -189,6 +189,9 @@ a {
   text-decoration: none;
 }
 .skip-link:focus { top: 0.75rem; }
+/* Po „Przejdź do treści” i „Na górę” fokus trafia na <main> (tabindex="-1" ustawia script.js):
+   to tylko punkt startu dla klawisza Tab, więc bez obrysu wokół całej treści. */
+main[tabindex="-1"]:focus { outline: none; }
 
 /* ---------- Układ ---------- */
 .wrap {
