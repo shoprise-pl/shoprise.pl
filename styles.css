@@ -1268,7 +1268,7 @@ main > .section + .section { border-top: var(--line) solid var(--ink); }
 
 /* wnętrze podglądu w stylu sklepu klienta, nie Shoprise */
 .cfg { background: #fff; color: #1f1d1a; font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; }
-.cfg-photo { display: grid; place-items: center; margin: 0; aspect-ratio: 16 / 9; background: #F4F2EE; border-bottom: 1px solid #e7e2da; }
+.cfg-photo { display: grid; place-items: center; margin: 0; aspect-ratio: 3 / 2; background: #fff; border-bottom: 1px solid #e7e2da; }
 .cfg-photo img { width: 100%; height: 100%; object-fit: contain; }
 .cfg-panel { display: grid; gap: 0.95rem; padding: 1rem 1.1rem 1.2rem; }
 .cfg-name { font-size: 1.05rem; font-weight: 600; line-height: 1.3; }
