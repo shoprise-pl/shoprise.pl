@@ -54,38 +54,6 @@
     stops.forEach((el) => stopObserver.observe(el));
   }
 
-  /* ---------- Podgląd konfiguratora łóżka (realizacja AMOR meble) ----------
-     Zdjęcia innych tkanin dociągamy dopiero, gdy ktoś najedzie albo wejdzie klawiaturą w podgląd. */
-  const cfg = document.querySelector('[data-cfg]');
-  if (cfg) {
-    const img = cfg.querySelector('[data-cfg-img]');
-    const fabricOut = cfg.querySelector('[data-cfg-fabric]');
-    const sizeOut = cfg.querySelector('[data-cfg-size]');
-    let preloaded = false;
-    const preload = () => {
-      if (preloaded) return;
-      preloaded = true;
-      cfg.querySelectorAll('input[name="cfg-fabric"]').forEach((input) => { new Image().src = input.dataset.img; });
-    };
-    cfg.addEventListener('pointerenter', preload);
-    cfg.addEventListener('focusin', preload);
-    cfg.addEventListener('change', (e) => {
-      const t = e.target;
-      if (t.name === 'cfg-fabric') {
-        fabricOut.textContent = t.dataset.name;
-        // podmień zdjęcie dopiero po wczytaniu, żeby nie mignęło puste pole
-        const next = new Image();
-        const alt = `Łóżko SETA w tkaninie: ${t.dataset.name.toLowerCase()}`;
-        next.onload = () => {
-          if (t.checked) { img.src = next.src; img.alt = alt; }
-        };
-        next.src = t.dataset.img;
-      } else if (t.name === 'cfg-size') {
-        sizeOut.textContent = t.value;
-      }
-    });
-  }
-
   /* ---------- Formularz ---------- */
   const form = document.getElementById('contact-form');
   if (!form) return;
