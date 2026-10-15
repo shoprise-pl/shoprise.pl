@@ -1237,6 +1237,63 @@ main > .section + .section { border-top: var(--line) solid var(--ink); }
   .case-speed:hover { transform: translate(-2px, -2px); box-shadow: 5px 5px 0 var(--ink); }
 }
 
+/* konfigurator łóżek (realizacja AMOR meble) */
+.config {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  margin-top: clamp(2rem, 1.5rem + 2vw, 3rem);
+  background: var(--paper);
+  border: var(--line) solid var(--ink);
+  border-radius: var(--r-lg);
+  box-shadow: var(--shadow-lg);
+  overflow: hidden;
+}
+.config-copy { display: grid; gap: 1.1rem; align-content: center; justify-items: start; padding: clamp(1.5rem, 1rem + 2vw, 2.75rem); }
+.config-copy h3 { font-size: clamp(1.75rem, 1.35rem + 1.6vw, 2.6rem); line-height: 1.05; }
+.config-copy > p { color: var(--ink-soft); }
+.config-copy > .config-hint { color: var(--ink); font-weight: 600; padding-left: 0.85rem; border-left: 4px solid var(--yellow); }
+.config-visual {
+  display: grid;
+  align-items: center;
+  padding: clamp(1.25rem, 0.8rem + 2vw, 2.5rem);
+  background-color: var(--sky);
+  background-image: var(--dots);
+  background-size: 22px 22px;
+  border-top: var(--line) solid var(--ink);
+}
+@media (min-width: 64rem) {
+  .config { grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr); }
+  .config-visual { border-top: 0; border-left: var(--line) solid var(--ink); }
+}
+
+/* wnętrze podglądu w stylu sklepu klienta, nie Shoprise */
+.cfg { background: #fff; color: #1f1d1a; font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; }
+.cfg-photo { display: grid; place-items: center; margin: 0; aspect-ratio: 16 / 9; background: #F4F2EE; border-bottom: 1px solid #e7e2da; }
+.cfg-photo img { width: 100%; height: 100%; object-fit: contain; }
+.cfg-panel { display: grid; gap: 0.95rem; padding: 1rem 1.1rem 1.2rem; }
+.cfg-name { font-size: 1.05rem; font-weight: 600; line-height: 1.3; }
+.cfg fieldset { min-width: 0; margin: 0; padding: 0; border: 0; }
+.cfg legend { margin-bottom: 0.5rem; padding: 0; font-size: 0.8125rem; font-weight: 600; color: #5f594f; }
+.cfg legend span { color: #1f1d1a; }
+.cfg-sizes, .cfg-swatches { display: flex; flex-wrap: wrap; gap: 0.45rem; }
+.cfg-chip, .cfg-swatch, .cfg-card { position: relative; cursor: pointer; }
+.cfg-chip input, .cfg-swatch input, .cfg-card input { position: absolute; inset: 0; width: 100%; height: 100%; margin: 0; opacity: 0; cursor: pointer; }
+.cfg-chip span { display: inline-block; padding: 0.4rem 0.75rem; border: 1px solid #d6d0c6; border-radius: 999px; font-size: 0.875rem; line-height: 1.2; }
+.cfg-chip input:checked + span { border-color: #1f1d1a; box-shadow: inset 0 0 0 1px #1f1d1a; font-weight: 600; }
+.cfg-chip input:focus-visible + span { outline: 2px solid #1f1d1a; outline-offset: 2px; }
+.cfg-swatch { width: 2.25rem; height: 2.25rem; }
+.cfg-swatch span { display: block; width: 100%; height: 100%; border-radius: 50%; background: var(--sw); box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.18); pointer-events: none; }
+.cfg-swatch input:checked + span { box-shadow: 0 0 0 2px #fff, 0 0 0 4px #1f1d1a; }
+.cfg-swatch input:focus-visible + span { outline: 2px solid #1f1d1a; outline-offset: 5px; }
+.cfg-note { margin-top: 0.5rem; font-size: 0.8125rem; color: #5f594f; }
+.cfg-versions { display: grid; gap: 0.5rem; }
+.cfg-card { display: grid; gap: 0.2rem; padding: 0.7rem 0.8rem; border: 1px solid #d6d0c6; border-radius: 10px; }
+.cfg-card:has(input:checked) { border-color: #1f1d1a; box-shadow: inset 0 0 0 1px #1f1d1a; }
+.cfg-card:has(input:focus-visible) { outline: 2px solid #1f1d1a; outline-offset: 2px; }
+.cfg-card b { font-size: 0.9rem; font-weight: 600; }
+.cfg-card small { font-size: 0.78rem; line-height: 1.35; color: #5f594f; }
+@media (min-width: 30rem) { .cfg-versions { grid-template-columns: 1fr 1fr; } }
+
 /* 404 */
 .not-found {
   min-height: 62vh;
