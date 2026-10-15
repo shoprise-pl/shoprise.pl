@@ -1181,7 +1181,7 @@ main > .section + .section { border-top: var(--line) solid var(--ink); }
 .section-mint { background: var(--mint); }
 .speed { display: grid; grid-template-columns: minmax(0, 1fr); gap: clamp(2rem, 1.5rem + 2vw, 3.5rem); align-items: center; }
 .speed-copy { display: grid; gap: 1.1rem; justify-items: start; }
-.speed-copy h2 { max-width: 20ch; }
+.speed-copy h2 { max-width: 20ch; font-size: clamp(2rem, 1.4rem + 2vw, 3rem); }
 .verdict { --sticker: var(--paper); gap: 0.5rem; }
 .verdict::before {
   content: "";
