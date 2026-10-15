@@ -1,5 +1,26 @@
-/* Shoprise — menu mobilne, pasek szybkiego kontaktu i formularz (Formspree). */
+/* Shoprise — czysty adres, menu mobilne, pasek szybkiego kontaktu i formularz (Formspree). */
 (() => {
+  /* ---------- Czysty adres ----------
+     „Przejdź do treści” i „Na górę” prowadzą do #main: bez JS działają jak zwykła kotwica, z JS przewijamy
+     i przenosimy fokus, nie dopisując #main do adresu. Kto wejdzie z linku z #main albo ze starym .html
+     (np. /sklepy-internetowe.html), zobaczy w pasku czysty adres; strona się nie przeładowuje. */
+  const main = document.getElementById('main');
+  const path = location.pathname
+    .replace(/^\/index(\.html)?$/, '/')
+    .replace(/^\/(?!404\.html$)([^/]+)\.html$/, '/$1');
+  const hash = location.hash === '#main' ? '' : location.hash;
+  if (path !== location.pathname || hash !== location.hash) {
+    history.replaceState(history.state, '', path + location.search + hash);
+  }
+  document.addEventListener('click', (e) => {
+    const link = e.target.closest('a[href="#main"]');
+    if (!link || !main || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+    e.preventDefault();
+    window.scrollTo({ top: 0 }); // płynnie albo od razu, jak każe scroll-behavior (przy ograniczonym ruchu od razu)
+    main.setAttribute('tabindex', '-1');
+    main.focus({ preventScroll: true });
+  });
+
   /* ---------- Menu ---------- */
   const header = document.querySelector('.site-header');
   const toggle = document.querySelector('.menu-toggle');
