@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Shoprise — sklepy internetowe, Google Ads i Meta Ads</title>
-<meta name="description" content="Budujemy sklepy na Shopify i Shoperze i sprowadzamy do nich klientów kampaniami Google Ads i Meta Ads. Sklep od 2450 zł netto, rozliczenie 50/50, bezpłatna analiza.">
+<meta name="description" content="Budujemy sklepy na Shopify i Shoperze i sprowadzamy do nich klientów kampaniami Google Ads i Meta Ads. Każdy projekt wyceniamy indywidualnie: bezpłatnie i na piśmie.">
 <link rel="canonical" href="https://shoprise.pl/">
 <meta name="theme-color" content="#FFFFFF">
 <meta name="color-scheme" content="light">
@@ -12,9 +12,9 @@
 <meta property="og:locale" content="pl_PL">
 <meta property="og:site_name" content="Shoprise">
 <meta property="og:title" content="Shoprise — sklepy internetowe i kampanie Google Ads i Meta Ads">
-<meta property="og:description" content="Budujemy sklepy na Shopify i Shoperze i sprowadzamy do nich klientów. Sklep od 2450 zł netto, rozliczenie 50/50.">
+<meta property="og:description" content="Budujemy sklepy na Shopify i Shoperze i sprowadzamy do nich klientów. Wycena indywidualna, bezpłatnie i na piśmie.">
 <meta property="og:url" content="https://shoprise.pl/">
-<meta property="og:image" content="https://shoprise.pl/shoprise_baner_og.png">
+<meta property="og:image" content="https://shoprise.pl/shoprise_og.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Shoprise — budujemy sklepy internetowe i sprowadzamy do nich klientów">
@@ -22,8 +22,10 @@
 <link rel="icon" href="shoprise_favicon.svg" type="image/svg+xml">
 <link rel="icon" href="shoprise_favicon_32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="shoprise_favicon_180.png">
+<link rel="preload" href="fonts/archivo-display.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="fonts/archivo.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="styles.css?v=20261013">
+<link rel="preload" href="assets/realizacje/amormeble-strona-glowna.webp" as="image" type="image/webp">
+<link rel="stylesheet" href="styles.css?v=20261015">
 <script>document.documentElement.classList.add('js')</script>
 <script type="application/ld+json">
 {
@@ -40,6 +42,33 @@
 </script>
 </head>
 <body>
+<svg class="sprite" aria-hidden="true" focusable="false">
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></symbol>
+  <symbol id="i-arrow-up" viewBox="0 0 24 24"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+  <symbol id="i-store" viewBox="0 0 24 24"><path d="M3.5 9.5 5 4h14l1.5 5.5"/><path d="M3.5 9.5a2.8 2.8 0 0 0 5.6 0 2.9 2.9 0 0 0 5.8 0 2.8 2.8 0 0 0 5.6 0"/><path d="M5 12.6V20h14v-7.4"/><path d="M10 20v-4.5h4V20"/></symbol>
+  <symbol id="i-percent" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m9 15 6-6"/><circle cx="9.2" cy="9.2" r=".9"/><circle cx="14.8" cy="14.8" r=".9"/></symbol>
+  <symbol id="i-cart" viewBox="0 0 24 24"><path d="M3 4h2.2l2.2 10.6a1.6 1.6 0 0 0 1.6 1.3h8.4a1.6 1.6 0 0 0 1.5-1.2L20.8 8H6.1"/><circle cx="10" cy="20" r="1.3"/><circle cx="17" cy="20" r="1.3"/></symbol>
+  <symbol id="i-window" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18"/><path d="M6.5 6.5h.01M9.5 6.5h.01"/></symbol>
+  <symbol id="i-search" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m15.5 15.5 5 5"/></symbol>
+  <symbol id="i-megaphone" viewBox="0 0 24 24"><path d="M4 10v4a1 1 0 0 0 1 1h2l8 5V4L7 9H5a1 1 0 0 0-1 1Z"/><path d="M18.5 9a4 4 0 0 1 0 6"/></symbol>
+  <symbol id="i-wrench" viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.8-3.8a6 6 0 0 1-7.9 7.9l-6.9 6.9a2.1 2.1 0 0 1-3-3l6.9-6.9a6 6 0 0 1 7.9-7.9l-3.8 3.8Z"/></symbol>
+  <symbol id="i-chart" viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="M18 17V9"/><path d="M13 17V5"/><path d="M8 17v-3"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+  <symbol id="i-doc" viewBox="0 0 24 24"><path d="M14.5 3H6.5A1.5 1.5 0 0 0 5 4.5v15A1.5 1.5 0 0 0 6.5 21h11a1.5 1.5 0 0 0 1.5-1.5V7.5Z"/><path d="M14 3v5h5"/><path d="M9 13h6M9 17h6"/></symbol>
+  <symbol id="i-half" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 1 0 18Z" fill="currentColor"/></symbol>
+  <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18"/></symbol>
+  <symbol id="i-trend" viewBox="0 0 24 24"><path d="m3 17 6-6 4 4 8-8"/><path d="M15 7h6v6"/></symbol>
+  <symbol id="i-box" viewBox="0 0 24 24"><path d="m7.5 4.3 9 5.1"/><path d="M21 8a2 2 0 0 0-1-1.7l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.7l7 4a2 2 0 0 0 2 0l7-4a2 2 0 0 0 1-1.7Z"/><path d="m3.3 7 8.7 5 8.7-5"/><path d="M12 22V12"/></symbol>
+  <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4.5 21a7.5 7.5 0 0 1 15 0"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 21.5s7.5-3.7 7.5-9.5V5.5L12 2.8 4.5 5.5V12c0 5.8 7.5 9.5 7.5 9.5Z"/><path d="m9 12 2 2 4-4"/></symbol>
+  <symbol id="i-users" viewBox="0 0 24 24"><path d="M15.5 21v-1.5a4 4 0 0 0-4-4h-5a4 4 0 0 0-4 4V21"/><circle cx="9" cy="7.5" r="3.8"/><path d="M21.5 21v-1.5a4 4 0 0 0-3-3.9"/><path d="M15.5 3.8a3.8 3.8 0 0 1 0 7.4"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M21.5 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 1.6 4.2 2 2 0 0 1 3.6 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L7.6 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2.5" y="4.5" width="19" height="15" rx="2"/><path d="m21.5 7-8.5 5.6a1.9 1.9 0 0 1-2 0L2.5 7"/></symbol>
+  <symbol id="i-burst" viewBox="0 0 100 100"><polygon vector-effect="non-scaling-stroke" points="50.0,2.0 58.5,13.0 70.8,6.8 73.7,20.3 87.5,20.1 84.2,33.5 96.8,39.3 88.0,50.0 96.8,60.7 84.2,66.5 87.5,79.9 73.7,79.7 70.8,93.2 58.5,87.0 50.0,98.0 41.5,87.0 29.2,93.2 26.3,79.7 12.5,79.9 15.8,66.5 3.2,60.7 12.0,50.0 3.2,39.3 15.8,33.5 12.5,20.1 26.3,20.3 29.2,6.8 41.5,13.0"/></symbol>
+  <symbol id="i-tag" viewBox="0 0 300 140"><path vector-effect="non-scaling-stroke" d="M74 5h208a13 13 0 0 1 13 13v104a13 13 0 0 1-13 13H74L8 70Z"/></symbol>
+</svg>
+
 <a class="skip-link" href="#main">Przejdź do treści</a>
 
 <header class="site-header" data-menu="closed">
@@ -49,10 +78,11 @@
     <nav class="site-nav" id="site-nav" aria-label="Główna">
       <ul class="nav-list" role="list">
         <li><a href="#uslugi">Usługi</a></li>
+        <li><a href="#realizacje">Realizacje</a></li>
         <li><a href="#proces">Jak działamy</a></li>
-        <li><a href="#cennik">Cennik</a></li>
+        <li><a href="#wycena">Cena</a></li>
         <li><a href="#faq">FAQ</a></li>
-        <li><a class="btn btn-outline" href="#kontakt">Bezpłatna analiza</a></li>
+        <li class="nav-cta"><a class="btn btn-primary" href="#kontakt">Bezpłatna wycena</a></li>
       </ul>
     </nav>
   </div>
@@ -63,105 +93,125 @@
   <section class="hero" aria-labelledby="hero-title">
     <div class="wrap hero-grid">
       <div class="hero-copy">
-        <h1 id="hero-title">Budujemy sklepy internetowe i&nbsp;sprowadzamy do nich klientów.</h1>
+        <p class="kicker">Shopify i Shoper · Google Ads · Meta Ads</p>
+        <h1 id="hero-title">Budujemy sklepy internetowe i&nbsp;<span class="hl">sprowadzamy do nich klientów.</span></h1>
         <p class="lead">Dla firm, które sprzedają stacjonarnie albo przez Allegro, a&nbsp;chcą sprzedawać we własnym sklepie. Sklep stawiamy na Shopify lub Shoperze, a&nbsp;klientów sprowadzamy kampaniami Google Ads i&nbsp;Meta Ads.</p>
         <div class="hero-actions">
-          <a class="btn btn-primary" href="#kontakt">Poproś o&nbsp;bezpłatną analizę</a>
-          <a class="link-strong" href="#cennik">Zobacz cennik</a>
+          <a class="btn btn-dark btn-lg" href="#kontakt">Poproś o&nbsp;bezpłatną wycenę <svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          <a class="btn btn-lg" href="#realizacje">Zobacz realizację</a>
         </div>
-        <p class="hero-note">Odpowiadamy w&nbsp;ciągu 24&nbsp;godzin.</p>
+        <ul class="trust" role="list">
+          <li><svg class="ic" aria-hidden="true"><use href="#i-clock"/></svg>Odpowiadamy w&nbsp;ciągu 24&nbsp;godzin</li>
+          <li><svg class="ic" aria-hidden="true"><use href="#i-doc"/></svg>Wycena na piśmie</li>
+          <li><svg class="ic" aria-hidden="true"><use href="#i-half"/></svg>50% zaliczki, 50% po odbiorze</li>
+        </ul>
       </div>
 
-      <aside class="spec" aria-labelledby="spec-title">
-        <h2 class="spec-title" id="spec-title">Sklep internetowy w&nbsp;skrócie</h2>
-        <p class="spec-price">
-          <span class="spec-price-label">Wdrożenie</span>
-          <span class="spec-price-amount">od&nbsp;2450&nbsp;zł</span>
-          <span class="spec-price-note">netto, jednorazowo</span>
-        </p>
-        <dl class="spec-list">
-          <div><dt>Platforma</dt><dd>Shopify albo Shoper</dd></div>
-          <div><dt>Start</dt><dd>ok.&nbsp;2&nbsp;tygodnie od otrzymania materiałów</dd></div>
-          <div><dt>Płatności</dt><dd>BLIK, szybkie przelewy, karty, Apple Pay i&nbsp;Google Pay</dd></div>
-          <div><dt>Dostawy</dt><dd>InPost, DPD, DHL, UPS i&nbsp;Poczta Polska</dd></div>
-          <div><dt>Rozliczenie</dt><dd>50%&nbsp;zaliczki, 50%&nbsp;po odbiorze</dd></div>
-          <div><dt>Po starcie</dt><dd>od&nbsp;30&nbsp;dni wsparcia, zależnie od pakietu</dd></div>
-        </dl>
-        <a class="spec-link" href="sklepy-internetowe.html">Pakiety i&nbsp;ceny sklepów</a>
-      </aside>
+      <figure class="hero-visual">
+        <div class="window">
+          <div class="window-bar" aria-hidden="true"><span class="window-dots"><i></i><i></i><i></i></span><span class="window-url">amormeble.pl</span></div>
+          <img src="assets/realizacje/amormeble-strona-glowna.webp" width="800" height="500" alt="Strona główna sklepu AMOR meble z kolekcją mebli do sypialni" fetchpriority="high" decoding="async">
+        </div>
+        <figcaption class="sticker hero-caption">Nasza realizacja: sklep AMOR&nbsp;meble</figcaption>
+        <div class="price-tag hero-tag">
+          <svg class="price-tag-shape" viewBox="0 0 300 140" aria-hidden="true"><use href="#i-tag"/><circle cx="54" cy="70" r="10"/><path class="price-tag-string" d="M54 70C40 40 22 20 -18 8"/></svg>
+          <span class="price-tag-label">Cena</span>
+          <span class="price-tag-value">Wycena indywidualna</span>
+          <span class="price-tag-note">bezpłatnie, na piśmie</span>
+        </div>
+      </figure>
     </div>
   </section>
 
-  <section class="section section-rule" id="dlakogo" aria-labelledby="dlakogo-title">
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker-strip">
+      <div class="ticker-track">
+        <ul class="ticker-list">
+          <li>Sklepy na Shopify</li><li>Sklepy na Shoperze</li><li>Kampanie Google Ads</li><li>Kampanie Meta Ads</li><li>Strony firmowe</li><li>Opieka po starcie</li>
+        </ul>
+        <ul class="ticker-list">
+          <li>Sklepy na Shopify</li><li>Sklepy na Shoperze</li><li>Kampanie Google Ads</li><li>Kampanie Meta Ads</li><li>Strony firmowe</li><li>Opieka po starcie</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <section class="section" id="dlakogo" aria-labelledby="dlakogo-title">
     <div class="wrap">
-      <div class="split">
-        <div class="split-head">
-          <h2 id="dlakogo-title">Dla kogo pracujemy</h2>
-          <p>Masz dobry produkt i&nbsp;klientów, którzy go kupują? To wystarczy na start.</p>
-        </div>
-        <div class="split-body">
-          <div class="cases">
-            <article class="case">
-              <h3>Sprzedajesz stacjonarnie</h3>
-              <p>Masz sklep, pracownię albo produkcję, ale zamówienia przyjmujesz tylko na miejscu i&nbsp;przez telefon. Sklep internetowy przyjmuje je całą dobę, razem z&nbsp;płatnością i&nbsp;wysyłką.</p>
-            </article>
-            <article class="case">
-              <h3>Sprzedajesz przez Allegro i&nbsp;inne platformy</h3>
-              <p>Od każdego zamówienia oddajesz prowizję, a&nbsp;klient zostaje na platformie. We własnym sklepie nie oddajesz prowizji platformie, a&nbsp;kontakt z&nbsp;kupującymi zostaje u&nbsp;Ciebie.</p>
-            </article>
-          </div>
-          <h3 class="sectors-title">Przykładowe branże</h3>
-          <ul class="sectors" role="list">
-            <li>Meble na wymiar</li>
-            <li>Odzież i&nbsp;akcesoria dziecięce</li>
-            <li>Butiki i&nbsp;sklepy stacjonarne</li>
-            <li>Lokalni producenci</li>
-            <li>Wypożyczalnie</li>
-            <li>Rękodzieło i&nbsp;personalizacja</li>
-          </ul>
-        </div>
+      <div class="section-head">
+        <h2 id="dlakogo-title">Dla kogo pracujemy</h2>
+        <p>Masz dobry produkt i&nbsp;klientów, którzy go kupują? To wystarczy na start.</p>
+      </div>
+      <div class="audience">
+        <article class="card audience-card">
+          <span class="icon-tile" style="--tile:var(--sky)"><svg class="ic" aria-hidden="true"><use href="#i-store"/></svg></span>
+          <h3>Sprzedajesz stacjonarnie</h3>
+          <p>Masz sklep, pracownię albo produkcję, ale zamówienia przyjmujesz tylko na miejscu i&nbsp;przez telefon. Sklep internetowy przyjmuje je całą dobę, razem z&nbsp;płatnością i&nbsp;wysyłką.</p>
+        </article>
+        <article class="card audience-card">
+          <span class="icon-tile" style="--tile:var(--coral)"><svg class="ic" aria-hidden="true"><use href="#i-percent"/></svg></span>
+          <h3>Sprzedajesz przez Allegro i&nbsp;inne platformy</h3>
+          <p>Od każdego zamówienia oddajesz prowizję, a&nbsp;klient zostaje na platformie. We własnym sklepie nie oddajesz prowizji platformie, a&nbsp;kontakt z&nbsp;kupującymi zostaje u&nbsp;Ciebie.</p>
+        </article>
+      </div>
+      <div class="sectors">
+        <h3 class="sectors-title">Przykładowe branże</h3>
+        <ul class="chips" role="list">
+          <li>Meble na wymiar</li>
+          <li>Odzież i&nbsp;akcesoria dziecięce</li>
+          <li>Butiki i&nbsp;sklepy stacjonarne</li>
+          <li>Lokalni producenci</li>
+          <li>Wypożyczalnie</li>
+          <li>Rękodzieło i&nbsp;personalizacja</li>
+        </ul>
       </div>
     </div>
   </section>
 
-  <section class="section section-mist" id="uslugi" aria-labelledby="uslugi-title">
+  <section class="section section-sky" id="uslugi" aria-labelledby="uslugi-title">
     <div class="wrap">
       <div class="section-head">
         <h2 id="uslugi-title">Co robimy</h2>
         <p>Budujemy sklep, sprowadzamy do niego klientów i&nbsp;zajmujemy się nim po starcie. Nie musisz szukać osobno wykonawcy sklepu i&nbsp;agencji reklamowej.</p>
       </div>
-      <div class="services">
+      <div class="service-groups">
         <div class="service-group">
-          <h3 class="service-group-title">Sklep i&nbsp;strona</h3>
-          <ul class="service-list" role="list">
-            <li>
+          <h3 class="group-label">Sklep i&nbsp;strona</h3>
+          <ul class="services" role="list">
+            <li class="card service is-link">
+              <span class="icon-tile" style="--tile:var(--yellow)"><svg class="ic" aria-hidden="true"><use href="#i-cart"/></svg></span>
               <h4>Sklepy na Shopify i&nbsp;Shoperze</h4>
               <p>Projekt i&nbsp;wdrożenie z&nbsp;płatnościami, dostawami i&nbsp;konfiguratorami produktów pod Twój asortyment.</p>
-              <a href="sklepy-internetowe.html">Pakiety sklepów</a>
+              <a class="more" href="sklepy-internetowe.html">Więcej o&nbsp;sklepach <svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a>
             </li>
-            <li>
+            <li class="card service is-link">
+              <span class="icon-tile" style="--tile:var(--mint)"><svg class="ic" aria-hidden="true"><use href="#i-window"/></svg></span>
               <h4>Strony internetowe</h4>
               <p>Wizytówki, strony firmowe i&nbsp;serwisy, które zbierają zapytania ofertowe. Szybkie, lekkie i&nbsp;widoczne w&nbsp;Google.</p>
-              <a href="strony-internetowe.html">Pakiety stron</a>
+              <a class="more" href="strony-internetowe.html">Więcej o&nbsp;stronach <svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a>
             </li>
-            <li>
+            <li class="card service">
+              <span class="icon-tile" style="--tile:var(--lilac)"><svg class="ic" aria-hidden="true"><use href="#i-wrench"/></svg></span>
               <h4>Prowadzenie po starcie</h4>
               <p>Aktualizacje, nowe podstrony, poprawki i&nbsp;rozwój sklepu. Piszesz, czego potrzebujesz, a&nbsp;my to wdrażamy.</p>
             </li>
           </ul>
         </div>
         <div class="service-group">
-          <h3 class="service-group-title">Reklama i&nbsp;sprzedaż</h3>
-          <ul class="service-list" role="list">
-            <li>
+          <h3 class="group-label">Reklama i&nbsp;sprzedaż</h3>
+          <ul class="services" role="list">
+            <li class="card service">
+              <span class="icon-tile" style="--tile:var(--yellow)"><svg class="ic" aria-hidden="true"><use href="#i-search"/></svg></span>
               <h4>Kampanie Google Ads</h4>
               <p>Docieramy do osób, które już szukają Twoich produktów w&nbsp;Google. Kampanie produktowe i&nbsp;w&nbsp;wyszukiwarce, rozliczane z&nbsp;wyników.</p>
             </li>
-            <li>
+            <li class="card service">
+              <span class="icon-tile" style="--tile:var(--coral)"><svg class="ic" aria-hidden="true"><use href="#i-megaphone"/></svg></span>
               <h4>Kampanie Meta Ads</h4>
               <p>Reklamy na Facebooku i&nbsp;Instagramie, które budują popyt i&nbsp;sprzedają, z&nbsp;pełną konfiguracją piksela i&nbsp;pomiaru konwersji.</p>
             </li>
-            <li>
+            <li class="card service">
+              <span class="icon-tile" style="--tile:var(--mint)"><svg class="ic" aria-hidden="true"><use href="#i-chart"/></svg></span>
               <h4>Raport co miesiąc</h4>
               <p>Co miesiąc dostajesz raport z&nbsp;wyników kampanii, więc wiesz, na co idzie budżet reklamowy.</p>
             </li>
@@ -171,7 +221,53 @@
     </div>
   </section>
 
-  <section class="section section-ink has-stairs" id="proces" aria-labelledby="proces-title">
+  <section class="section" id="realizacje" aria-labelledby="realizacje-title">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="realizacje-title">Realizacje</h2>
+        <p>Sklep, który możesz od razu otworzyć i&nbsp;sprawdzić na własnym telefonie.</p>
+      </div>
+
+      <article class="case" aria-labelledby="case-amor">
+        <div class="case-visual">
+          <div class="window case-window">
+            <div class="window-bar" aria-hidden="true"><span class="window-dots"><i></i><i></i><i></i></span><span class="window-url">amormeble.pl/products/lozko-terra</span></div>
+            <img src="assets/realizacje/amormeble-karta-produktu.webp" width="800" height="438" loading="lazy" decoding="async" alt="Karta produktu w sklepie AMOR meble: łóżko TERRA z ceną, wymiarami i wyborem rozmiaru">
+          </div>
+          <div class="phone">
+            <img src="assets/realizacje/amormeble-telefon-390.webp" srcset="assets/realizacje/amormeble-telefon-390.webp 390w, assets/realizacje/amormeble-telefon-780.webp 780w" sizes="(min-width: 64rem) 12rem, 30vw" width="390" height="844" loading="lazy" decoding="async" alt="Strona główna sklepu AMOR meble na telefonie">
+          </div>
+        </div>
+        <div class="case-body">
+          <ul class="case-tags" role="list">
+            <li>Sklep internetowy</li>
+            <li>Meble</li>
+            <li>Shopify</li>
+          </ul>
+          <h3 id="case-amor">AMOR meble</h3>
+          <p>Sklep z&nbsp;meblami do salonu, jadalni i&nbsp;sypialni. Ponad 180 produktów z&nbsp;wymiarami i&nbsp;specyfikacją techniczną.</p>
+          <h4 class="case-subtitle">Co zrobiliśmy</h4>
+          <ul class="checklist" role="list">
+            <li>Sklep na Shopify z&nbsp;własnymi sekcjami, np. zestawami mebli z&nbsp;jednego pokoju</li>
+            <li>Karty produktów ze specyfikacją, wymiarami i&nbsp;rysunkami technicznymi</li>
+            <li>Poradnik zakupowy pod SEO, z&nbsp;odpowiedziami na pytania klientów</li>
+            <li>Pomiar i&nbsp;reklama: GA4, Google Ads i&nbsp;Search Console</li>
+          </ul>
+          <a class="btn btn-dark case-link" href="https://amormeble.pl/" target="_blank" rel="noopener">Otwórz amormeble.pl <svg class="ic" aria-hidden="true"><use href="#i-arrow-up"/></svg><span class="visually-hidden"> (otwiera się w&nbsp;nowej karcie)</span></a>
+        </div>
+      </article>
+
+      <aside class="card next-case" aria-labelledby="next-title">
+        <div>
+          <h3 id="next-title">Następny może być Twój sklep</h3>
+          <p>Opisz, co sprzedajesz. Sprawdzimy, czy sprzedaż online ma sens, i&nbsp;przygotujemy wycenę.</p>
+        </div>
+        <a class="btn btn-primary" href="#kontakt">Poproś o&nbsp;wycenę</a>
+      </aside>
+    </div>
+  </section>
+
+  <section class="section section-ink" id="proces" aria-labelledby="proces-title">
     <div class="wrap">
       <div class="section-head">
         <h2 id="proces-title">Od analizy do pierwszych zamówień</h2>
@@ -194,7 +290,7 @@
           <p>Uruchamiamy Google Ads i&nbsp;Meta Ads z&nbsp;pełnym pomiarem konwersji. Co miesiąc dostajesz raport.</p>
         </li>
         <li class="stair">
-          <svg class="stairs-arrow" viewBox="0 0 44 44" aria-hidden="true" focusable="false"><path d="M8 36 36 8m0 0H20m16 0v16" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <svg class="stairs-arrow" viewBox="0 0 44 44" aria-hidden="true" focusable="false"><path d="M8 36 36 8m0 0H20m16 0v16"/></svg>
           <span class="stair-n">4</span>
           <h3>Skalowanie</h3>
           <p>Gdy sprzedaż w&nbsp;Polsce działa, pomagamy wejść na rynki zagraniczne.</p>
@@ -203,65 +299,101 @@
     </div>
   </section>
 
-  <section class="section" id="cennik" aria-labelledby="cennik-title">
+  <section class="section section-banner" aria-labelledby="banner-title">
     <div class="wrap">
-      <div class="section-head">
-        <h2 id="cennik-title">Wiesz, za co płacisz, zanim zaczniemy</h2>
-        <p>Podajemy ceny wyjściowe dla typowego zakresu. Każdy projekt wyceniamy indywidualnie, zawsze na piśmie.</p>
-      </div>
-
-      <div class="price-list">
-        <article class="price-row">
-          <div class="price-row-name">
-            <h3>Sklepy internetowe</h3>
-            <p>Shopify i&nbsp;Shoper, z&nbsp;płatnościami, dostawami i&nbsp;opcją kampanii Google Ads i&nbsp;Meta Ads od startu.</p>
+      <div class="banner">
+        <h2 id="banner-title"><span>Masz produkt, który się sprzedaje?</span> <span>Zróbmy mu sklep.</span></h2>
+        <div class="banner-row">
+          <p>Napisz, co sprzedajesz. Odpiszemy w&nbsp;ciągu 24&nbsp;godzin, zwykle tego samego dnia.</p>
+          <div class="banner-actions">
+            <a class="btn btn-dark btn-lg" href="#kontakt">Poproś o&nbsp;bezpłatną wycenę</a>
+            <a class="btn btn-lg" href="tel:+48696851523"><svg class="ic" aria-hidden="true"><use href="#i-phone"/></svg>696&nbsp;851&nbsp;523</a>
           </div>
-          <p class="price-amount">od&nbsp;2450&nbsp;zł <small>netto</small></p>
-          <a class="btn btn-outline" href="sklepy-internetowe.html">Pakiety sklepów</a>
-        </article>
-        <article class="price-row">
-          <div class="price-row-name">
-            <h3>Strony internetowe</h3>
-            <p>Wizytówka, strona firmowa lub rozbudowany serwis. Szybkie, lekkie i&nbsp;widoczne w&nbsp;Google.</p>
-          </div>
-          <p class="price-amount">od&nbsp;1050&nbsp;zł <small>netto</small></p>
-          <a class="btn btn-outline" href="strony-internetowe.html">Pakiety stron</a>
-        </article>
+        </div>
+        <div class="burst banner-burst" aria-hidden="true"><svg viewBox="0 0 100 100"><use href="#i-burst"/></svg><span>Wycena<br>gratis</span></div>
       </div>
-
-      <div class="terms">
-        <h3>Warunki współpracy</h3>
-        <ul class="terms-list" role="list">
-          <li><strong>50%&nbsp;zaliczki, 50%&nbsp;po odbiorze</strong> <span>Drugą połowę płacisz za gotowy, odebrany projekt.</span></li>
-          <li><strong>Wycena na piśmie</strong> <span>Widzisz wszystkie koszty przed startem, także abonament platformy i&nbsp;prowizje płatności.</span></li>
-          <li><strong>Termin w&nbsp;wycenie</strong> <span>Dokładny termin startu dostajesz razem z&nbsp;wyceną.</span></li>
-          <li><strong>Prowizja od wyników</strong> <span>Prowadzenie i&nbsp;kampanie rozliczamy co miesiąc. Część wynagrodzenia zależy od wyników.</span></li>
-        </ul>
-      </div>
-
-      <p class="note">Nie wiesz, czego potrzebujesz? <a href="#kontakt">Napisz do nas</a>. Po bezpłatnej analizie doradzimy, a&nbsp;jeśli czegoś nie potrzebujesz, powiemy wprost.</p>
     </div>
   </section>
 
-  <section class="section section-rule" id="dlaczego" aria-labelledby="dlaczego-title">
+  <section class="section section-lilac" id="wycena" aria-labelledby="wycena-title">
+    <div class="wrap">
+      <div class="pricing">
+        <div class="pricing-visual">
+          <div class="price-tag price-tag-lg">
+            <svg class="price-tag-shape" viewBox="0 0 300 140" aria-hidden="true"><use href="#i-tag"/><circle cx="54" cy="70" r="10"/><path class="price-tag-string" d="M54 70C40 40 22 20 -18 8"/></svg>
+            <span class="price-tag-label">Cena</span>
+            <span class="price-tag-value">Wycena indywidualna</span>
+            <span class="price-tag-note">bezpłatnie, na piśmie</span>
+          </div>
+        </div>
+        <div class="pricing-copy">
+          <h2 id="wycena-title">Każdy projekt wyceniamy indywidualnie</h2>
+          <p class="lead">Nie mamy cennika z&nbsp;półki, bo każdy sklep ma inny zakres. Cenę liczymy dla Twojego projektu, bezpłatnie i&nbsp;na piśmie, zanim cokolwiek zaczniemy.</p>
+          <h3 class="pricing-sub">Od czego zależy cena</h3>
+          <ul class="chips chips-solid" role="list">
+            <li>Liczba produktów i&nbsp;kategorii</li>
+            <li>Projekt graficzny pod Twoją markę</li>
+            <li>Integracje, np. z&nbsp;Allegro</li>
+            <li>Konfiguratory i&nbsp;nietypowe opcje produktów</li>
+            <li>Kampanie Google Ads i&nbsp;Meta Ads</li>
+          </ul>
+        </div>
+      </div>
+
+      <h3 class="pricing-sub pricing-sub-terms">W&nbsp;każdej wycenie</h3>
+      <ul class="terms" role="list">
+        <li class="card term">
+          <span class="icon-tile" style="--tile:var(--yellow)"><svg class="ic" aria-hidden="true"><use href="#i-doc"/></svg></span>
+          <strong>Wszystkie koszty na piśmie</strong>
+          <p>Widzisz je przed startem, także abonament platformy i&nbsp;prowizje płatności.</p>
+        </li>
+        <li class="card term">
+          <span class="icon-tile" style="--tile:var(--sky)"><svg class="ic" aria-hidden="true"><use href="#i-calendar"/></svg></span>
+          <strong>Termin startu</strong>
+          <p>Dokładny termin startu dostajesz razem z&nbsp;wyceną.</p>
+        </li>
+        <li class="card term">
+          <span class="icon-tile" style="--tile:var(--mint)"><svg class="ic" aria-hidden="true"><use href="#i-half"/></svg></span>
+          <strong>50%&nbsp;zaliczki, 50%&nbsp;po&nbsp;odbiorze</strong>
+          <p>Drugą połowę płacisz za gotowy, odebrany projekt.</p>
+        </li>
+        <li class="card term">
+          <span class="icon-tile" style="--tile:var(--coral)"><svg class="ic" aria-hidden="true"><use href="#i-trend"/></svg></span>
+          <strong>Prowizja od wyników</strong>
+          <p>Prowadzenie i&nbsp;kampanie rozliczamy co miesiąc. Część wynagrodzenia zależy od wyników.</p>
+        </li>
+      </ul>
+
+      <div class="pricing-cta">
+        <a class="btn btn-dark btn-lg" href="#kontakt">Poproś o&nbsp;bezpłatną wycenę</a>
+        <p>Nie wiesz, czego potrzebujesz? Po bezpłatnej analizie doradzimy, a&nbsp;jeśli czegoś nie potrzebujesz, powiemy wprost.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="dlaczego" aria-labelledby="dlaczego-title">
     <div class="wrap">
       <div class="section-head">
         <h2 id="dlaczego-title">Na co możesz liczyć</h2>
       </div>
       <div class="principles">
-        <article class="principle">
+        <article class="card principle">
+          <span class="icon-tile" style="--tile:var(--yellow)"><svg class="ic" aria-hidden="true"><use href="#i-box"/></svg></span>
           <h3>Doświadczenie z&nbsp;własnych sklepów</h3>
           <p>Sami prowadzimy e-commerce. Polecamy tylko to, co sprawdziliśmy na własnych sklepach i&nbsp;własnych budżetach reklamowych.</p>
         </article>
-        <article class="principle">
+        <article class="card principle">
+          <span class="icon-tile" style="--tile:var(--sky)"><svg class="ic" aria-hidden="true"><use href="#i-user"/></svg></span>
           <h3>Kontakt z&nbsp;osobą, która robi projekt</h3>
           <p>Bez infolinii i&nbsp;przerzucania między działami. Odpisuje Ci ta sama osoba, która prowadzi Twój projekt.</p>
         </article>
-        <article class="principle">
+        <article class="card principle">
+          <span class="icon-tile" style="--tile:var(--mint)"><svg class="ic" aria-hidden="true"><use href="#i-shield"/></svg></span>
           <h3>Szczerość, zanim wydasz pieniądze</h3>
           <p>Jeśli Twój produkt nie ma potencjału w&nbsp;internecie albo czegoś nie potrzebujesz, usłyszysz to od nas na samym początku.</p>
         </article>
-        <article class="principle">
+        <article class="card principle">
+          <span class="icon-tile" style="--tile:var(--coral)"><svg class="ic" aria-hidden="true"><use href="#i-users"/></svg></span>
           <h3>Wspólny interes</h3>
           <p>Część naszego wynagrodzenia to prowizja od wyników, więc zależy nam na Twojej sprzedaży tak samo jak Tobie.</p>
         </article>
@@ -269,44 +401,46 @@
     </div>
   </section>
 
-  <section class="section section-mist" id="faq" aria-labelledby="faq-title">
-    <div class="wrap">
-      <div class="split">
-        <div class="split-head faq-head">
-          <h2 id="faq-title">Częste pytania</h2>
-          <p>Tego zwykle chcą się dowiedzieć właściciele firm przed startem. Nie ma tu Twojego pytania? Napisz na <a href="mailto:biuro@shoprise.pl">biuro@shoprise.pl</a>.</p>
-        </div>
-        <div class="split-body faq">
-          <details>
-            <summary>Ile kosztuje utrzymanie sklepu internetowego?</summary>
-            <div class="faq-a"><p>Poza wdrożeniem sklep ma stałe koszty: abonament platformy (Shoper od ok.&nbsp;100&nbsp;zł miesięcznie, Shopify od ok.&nbsp;39&nbsp;USD miesięcznie), domenę za ok.&nbsp;100&nbsp;zł rocznie i&nbsp;prowizje operatora płatności. Wszystkie te koszty pokazujemy w&nbsp;wycenie.</p></div>
-          </details>
-          <details>
-            <summary>Jakie metody płatności będzie miał mój sklep?</summary>
-            <div class="faq-a"><p>Takie, jakie wybierzesz: BLIK, szybkie przelewy (Przelewy24, PayU, Tpay), karty, Apple Pay i&nbsp;Google Pay, a&nbsp;w&nbsp;razie potrzeby płatność za pobraniem. Doradzimy zestaw, który ma sens dla Twoich klientów.</p></div>
-          </details>
-          <details>
-            <summary>Jakie formy dostawy można podpiąć?</summary>
-            <div class="faq-a"><p>Paczkomaty InPost, kurierów (DPD, DHL, UPS), Pocztę Polską i&nbsp;brokerów, np. Furgonetkę. Ustawiamy cenniki dostaw i&nbsp;darmową wysyłkę od wybranej kwoty koszyka.</p></div>
-          </details>
-          <details>
-            <summary>Czy będę mógł samodzielnie dodawać produkty?</summary>
-            <div class="faq-a"><p>Tak. Shoper i&nbsp;Shopify mają proste panele: dodasz produkt, zmienisz cenę czy opis bez naszej pomocy. Na start robimy krótkie szkolenie, a&nbsp;jeśli wolisz to oddelegować, zajmiemy się tym w&nbsp;ramach prowadzenia sklepu.</p></div>
-          </details>
-          <details>
-            <summary>Jak wygląda rozliczenie?</summary>
-            <div class="faq-a"><p>Wdrożenie sklepu to ryczałt: 50%&nbsp;zaliczki i&nbsp;50%&nbsp;po odbiorze. Prowadzenie i&nbsp;kampanie rozliczamy co miesiąc, a&nbsp;część wynagrodzenia to prowizja od wyników, więc gramy do jednej bramki. Szczegóły zawsze zapisujemy w&nbsp;umowie.</p></div>
-          </details>
-          <details>
-            <summary>Ile trwa uruchomienie sklepu?</summary>
-            <div class="faq-a"><p>Prosty sklep startuje po ok.&nbsp;2&nbsp;tygodniach od otrzymania materiałów (zdjęć, opisów, logo). Większe wdrożenia z&nbsp;integracjami trwają do&nbsp;3–4&nbsp;tygodni. Dokładny termin dostajesz w&nbsp;wycenie i&nbsp;trzymamy się go.</p></div>
-          </details>
-        </div>
+  <section class="section section-soft" id="faq" aria-labelledby="faq-title">
+    <div class="wrap faq-layout">
+      <div class="faq-head">
+        <h2 id="faq-title">Częste pytania</h2>
+        <p>Tego zwykle chcą się dowiedzieć właściciele firm przed startem. Nie ma tu Twojego pytania? Napisz na <a href="mailto:biuro@shoprise.pl">biuro@shoprise.pl</a>.</p>
+      </div>
+      <div class="faq">
+        <details>
+          <summary>Ile kosztuje sklep internetowy?</summary>
+          <div class="faq-a"><p>Każdy sklep wyceniamy indywidualnie, bo cena zależy od zakresu: liczby produktów, projektu graficznego, integracji i&nbsp;tego, czy prowadzimy też kampanie. Wycenę dostajesz bezpłatnie i&nbsp;na piśmie, razem z&nbsp;terminem startu i&nbsp;wszystkimi kosztami stałymi.</p></div>
+        </details>
+        <details>
+          <summary>Ile kosztuje utrzymanie sklepu internetowego?</summary>
+          <div class="faq-a"><p>Poza wdrożeniem sklep ma stałe koszty: abonament platformy (Shoper od ok.&nbsp;100&nbsp;zł miesięcznie, Shopify od ok.&nbsp;39&nbsp;USD miesięcznie), domenę za ok.&nbsp;100&nbsp;zł rocznie i&nbsp;prowizje operatora płatności. Wszystkie te koszty pokazujemy w&nbsp;wycenie.</p></div>
+        </details>
+        <details>
+          <summary>Jakie metody płatności będzie miał mój sklep?</summary>
+          <div class="faq-a"><p>Takie, jakie wybierzesz: BLIK, szybkie przelewy (Przelewy24, PayU, Tpay), karty, Apple Pay i&nbsp;Google Pay, a&nbsp;w&nbsp;razie potrzeby płatność za pobraniem. Doradzimy zestaw, który ma sens dla Twoich klientów.</p></div>
+        </details>
+        <details>
+          <summary>Jakie formy dostawy można podpiąć?</summary>
+          <div class="faq-a"><p>Paczkomaty InPost, kurierów (DPD, DHL, UPS), Pocztę Polską i&nbsp;brokerów, np. Furgonetkę. Ustawiamy cenniki dostaw i&nbsp;darmową wysyłkę od wybranej kwoty koszyka.</p></div>
+        </details>
+        <details>
+          <summary>Czy będę mógł samodzielnie dodawać produkty?</summary>
+          <div class="faq-a"><p>Tak. Shoper i&nbsp;Shopify mają proste panele: dodasz produkt, zmienisz cenę czy opis bez naszej pomocy. Na start robimy krótkie szkolenie, a&nbsp;jeśli wolisz to oddelegować, zajmiemy się tym w&nbsp;ramach prowadzenia sklepu.</p></div>
+        </details>
+        <details>
+          <summary>Jak wygląda rozliczenie?</summary>
+          <div class="faq-a"><p>Wdrożenie sklepu rozliczamy jednorazowo: 50%&nbsp;zaliczki i&nbsp;50%&nbsp;po odbiorze. Prowadzenie i&nbsp;kampanie rozliczamy co miesiąc, a&nbsp;część wynagrodzenia to prowizja od wyników, więc gramy do jednej bramki. Szczegóły zawsze zapisujemy w&nbsp;umowie.</p></div>
+        </details>
+        <details>
+          <summary>Ile trwa uruchomienie sklepu?</summary>
+          <div class="faq-a"><p>Prosty sklep startuje po ok.&nbsp;2&nbsp;tygodniach od otrzymania materiałów (zdjęć, opisów, logo). Większe wdrożenia z&nbsp;integracjami trwają do&nbsp;3–4&nbsp;tygodni. Dokładny termin dostajesz w&nbsp;wycenie i&nbsp;trzymamy się go.</p></div>
+        </details>
       </div>
     </div>
   </section>
 
-  <section class="section" id="kontakt" aria-labelledby="kontakt-title">
+  <section class="section section-sky" id="kontakt" aria-labelledby="kontakt-title">
     <div class="wrap contact">
       <div class="contact-info">
         <h2 id="kontakt-title">Napisz, co sprzedajesz</h2>
@@ -317,13 +451,14 @@
           <li>Rozmawiamy o&nbsp;Twoim produkcie i&nbsp;sprawdzamy, czy sprzedaż online ma sens.</li>
           <li>Dostajesz wycenę na piśmie, z&nbsp;terminem startu.</li>
         </ol>
-        <dl class="direct">
-          <div><dt>E-mail</dt><dd><a href="mailto:biuro@shoprise.pl">biuro@shoprise.pl</a></dd></div>
-          <div><dt>Telefon</dt><dd><a href="tel:+48696851523">+48&nbsp;696&nbsp;851&nbsp;523</a></dd></div>
-        </dl>
+        <ul class="direct" role="list">
+          <li><a href="tel:+48696851523"><span class="icon-tile" style="--tile:var(--yellow)"><svg class="ic" aria-hidden="true"><use href="#i-phone"/></svg></span><span><small>Zadzwoń</small>+48&nbsp;696&nbsp;851&nbsp;523</span></a></li>
+          <li><a href="mailto:biuro@shoprise.pl"><span class="icon-tile" style="--tile:var(--mint)"><svg class="ic" aria-hidden="true"><use href="#i-mail"/></svg></span><span><small>Napisz e-mail</small>biuro@shoprise.pl</span></a></li>
+        </ul>
       </div>
 
       <form class="form" id="contact-form" action="https://formspree.io/f/mlgqnnkg" method="POST">
+        <h3 class="form-title">Zapytanie o&nbsp;wycenę</h3>
         <input type="hidden" name="_subject" value="Nowe zapytanie ze strony Shoprise">
         <div class="field">
           <label for="f-name">Imię lub nazwa firmy</label>
@@ -338,7 +473,7 @@
           <label for="f-msg">Co sprzedajesz?</label>
           <textarea id="f-msg" name="message" rows="5" required placeholder="Np. meble ogrodowe, sprzedaż stacjonarna, chcę zacząć sprzedawać online"></textarea>
         </div>
-        <button class="btn btn-primary btn-block" type="submit">Wyślij wiadomość</button>
+        <button class="btn btn-primary btn-lg btn-block" type="submit">Wyślij zapytanie</button>
         <p class="form-status" id="form-status" role="status" hidden></p>
         <p class="form-note">Wysyłając formularz, zgadzasz się na kontakt w&nbsp;sprawie wyceny.</p>
       </form>
@@ -350,21 +485,23 @@
 <footer class="site-footer">
   <div class="wrap footer-grid">
     <div class="footer-brand">
-      <a class="brand" href="./"><img src="assets/shoprise-logo.svg" alt="Shoprise, strona główna" width="136" height="30" loading="lazy"></a>
+      <a class="brand" href="./"><img src="assets/shoprise-logo-jasne.svg" alt="Shoprise, strona główna" width="136" height="30" loading="lazy"></a>
       <p>Sklepy internetowe na Shopify i&nbsp;Shoperze, strony firmowe oraz kampanie Google Ads i&nbsp;Meta Ads.</p>
     </div>
     <nav class="footer-col" aria-labelledby="footer-oferta">
       <h2 class="footer-title" id="footer-oferta">Oferta</h2>
       <ul role="list">
-        <li><a href="#uslugi">Usługi</a></li>
-        <li><a href="sklepy-internetowe.html">Cennik sklepów</a></li>
-        <li><a href="strony-internetowe.html">Cennik stron</a></li>
+        <li><a href="sklepy-internetowe.html">Sklepy internetowe</a></li>
+        <li><a href="strony-internetowe.html">Strony internetowe</a></li>
+        <li><a href="#uslugi">Kampanie Google i&nbsp;Meta</a></li>
       </ul>
     </nav>
     <nav class="footer-col" aria-labelledby="footer-info">
       <h2 class="footer-title" id="footer-info">Informacje</h2>
       <ul role="list">
+        <li><a href="#realizacje">Realizacje</a></li>
         <li><a href="#proces">Jak działamy</a></li>
+        <li><a href="#wycena">Cena</a></li>
         <li><a href="#faq">Częste pytania</a></li>
       </ul>
     </nav>
@@ -382,6 +519,11 @@
   </div>
 </footer>
 
-<script src="script.js?v=20261013" defer></script>
+<nav class="quick-bar" aria-label="Szybki kontakt" data-visible="false">
+  <a class="btn" href="tel:+48696851523"><svg class="ic" aria-hidden="true"><use href="#i-phone"/></svg>Zadzwoń</a>
+  <a class="btn btn-primary" href="#kontakt">Bezpłatna wycena</a>
+</nav>
+
+<script src="script.js?v=20261015" defer></script>
 </body>
 </html>

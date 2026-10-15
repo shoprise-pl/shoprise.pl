@@ -1,4 +1,4 @@
-/* Shoprise — menu mobilne i formularz kontaktowy (Formspree). */
+/* Shoprise — menu mobilne, pasek szybkiego kontaktu i formularz (Formspree). */
 (() => {
   /* ---------- Menu ---------- */
   const header = document.querySelector('.site-header');
@@ -22,7 +22,36 @@
     document.addEventListener('click', (e) => {
       if (isOpen() && !header.contains(e.target)) setOpen(false);
     });
-    window.matchMedia('(min-width: 54rem)').addEventListener('change', () => setOpen(false));
+    window.matchMedia('(min-width: 64rem)').addEventListener('change', () => setOpen(false));
+  }
+
+  /* ---------- Pasek szybkiego kontaktu (tylko telefon) ----------
+     Pojawia się, gdy przyciski z nagłówka strony znikną z ekranu,
+     i chowa się nad formularzem i stopką, żeby nie zasłaniać kontaktu. */
+  const bar = document.querySelector('.quick-bar');
+  if (bar && 'IntersectionObserver' in window) {
+    const start = document.querySelector('.hero, .page-head');
+    const stops = [...document.querySelectorAll('#kontakt, .site-footer')];
+    let pastStart = !start;
+    const visibleStops = new Set();
+    const update = () => {
+      bar.dataset.visible = String(pastStart && visibleStops.size === 0);
+    };
+
+    if (start) {
+      new IntersectionObserver(([entry]) => {
+        pastStart = !entry.isIntersecting && entry.boundingClientRect.top < 0;
+        update();
+      }).observe(start);
+    }
+    const stopObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) visibleStops.add(entry.target);
+        else visibleStops.delete(entry.target);
+      });
+      update();
+    });
+    stops.forEach((el) => stopObserver.observe(el));
   }
 
   /* ---------- Formularz ---------- */
@@ -35,10 +64,10 @@
   const buttonLabel = button.textContent;
   const message = form.querySelector('#f-msg');
 
-  // Link „Zapytaj o ten pakiet” przekazuje nazwę pakietu: ?pakiet=Sklep%20Pro#kontakt
+  // Przyciski „Zapytaj o wycenę” na podstronach przekazują zakres: ?pakiet=Sklep%20Pro#kontakt
   const pkg = new URLSearchParams(window.location.search).get('pakiet');
   if (pkg && message && !message.value) {
-    message.value = `Interesuje mnie pakiet „${pkg.slice(0, 60)}”. `;
+    message.value = `Interesuje mnie zakres „${pkg.slice(0, 60)}”. `;
   }
 
   const messages = {
@@ -112,12 +141,12 @@
       });
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       form.reset();
-      button.textContent = 'Wiadomość wysłana';
-      setStatus('ok', 'Dzięki, wiadomość dotarła. Odpiszemy w ciągu 24 godzin.');
+      button.textContent = 'Zapytanie wysłane';
+      setStatus('ok', 'Dzięki, zapytanie dotarło. Odpiszemy w ciągu 24 godzin.');
     } catch (err) {
       button.disabled = false;
       button.textContent = buttonLabel;
-      setStatus('error', 'Nie udało się wysłać wiadomości. Spróbuj jeszcze raz albo napisz na <a href="mailto:biuro@shoprise.pl">biuro@shoprise.pl</a>.');
+      setStatus('error', 'Nie udało się wysłać zapytania. Spróbuj jeszcze raz albo napisz na <a href="mailto:biuro@shoprise.pl">biuro@shoprise.pl</a>.');
     }
   });
 })();
