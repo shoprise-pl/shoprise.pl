@@ -72,9 +72,14 @@
     cfg.addEventListener('change', (e) => {
       const t = e.target;
       if (t.name === 'cfg-fabric') {
-        img.src = t.dataset.img;
-        img.alt = `Łóżko SETA w tkaninie: ${t.dataset.name.toLowerCase()}`;
         fabricOut.textContent = t.dataset.name;
+        // podmień zdjęcie dopiero po wczytaniu, żeby nie mignęło puste pole
+        const next = new Image();
+        const alt = `Łóżko SETA w tkaninie: ${t.dataset.name.toLowerCase()}`;
+        next.onload = () => {
+          if (t.checked) { img.src = next.src; img.alt = alt; }
+        };
+        next.src = t.dataset.img;
       } else if (t.name === 'cfg-size') {
         sizeOut.textContent = t.value;
       }
