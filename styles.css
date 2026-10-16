@@ -1204,11 +1204,23 @@ main > .section + .section { border-top: var(--line) solid var(--ink); }
 @media (min-width: 64rem) {
   .speed-head { grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr); gap: 1.1rem 3.5rem; align-items: end; }
 }
-/* zrzut kategorii PageSpeed Insights na całą szerokość; obraz jest przycięty tak, że na komputerze
-   każdy wynik stoi nad swoją kartą z wyjaśnieniem (5 kolumn, odstęp 1,25rem) */
+/* zrzuty kategorii PageSpeed Insights: komputer i telefon jeden pod drugim, od 64rem obok siebie
+   (wtedy każdy pasek ma mniej więcej swoją naturalną wielkość, więc zrzut jest ostry) */
 .speed-audit { margin-top: clamp(2rem, 1.6rem + 1.6vw, 3rem); }
+.psi-pair { display: grid; }
+.psi-row { display: grid; gap: 0.25rem; padding-top: 0.85rem; }
+.psi-row + .psi-row { border-top: var(--line) solid var(--ink); }
+.psi-device { display: inline-flex; align-items: center; gap: 0.45rem; padding: 0 1rem; font-size: var(--text-sm); font-weight: 650; }
+.psi-device .ic { width: 1.15rem; height: 1.15rem; }
+@media (min-width: 64rem) {
+  .psi-pair { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .psi-row + .psi-row { border-top: 0; border-left: var(--line) solid var(--ink); }
+}
 .metrics-audit { margin-top: 1.75rem; }
 .metric-value small { font-size: 0.5em; font-weight: 800; letter-spacing: 0; color: var(--ink-soft); }
+.metric-split { display: flex; flex-wrap: wrap; gap: 0.35rem 1.1rem; align-items: flex-end; }
+.metric-split > span { display: grid; gap: 0.3rem; }
+.metric-split small { font-size: 0.75rem; font-weight: 650; line-height: 1; color: var(--ink-soft); }
 .metric-note { margin-top: 0.2rem; font-size: 0.8125rem; line-height: 1.45; color: var(--ink-soft); }
 /* druga część: Core Web Vitals z prawdziwych wizyt */
 .speed-field { margin-top: clamp(3.5rem, 2.5rem + 3vw, 5.5rem); }
