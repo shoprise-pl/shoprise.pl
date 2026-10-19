@@ -428,7 +428,7 @@ main > .section + .section { border-top: var(--line) solid var(--ink); }
   background-color: var(--yellow);
   background-image: var(--dots);
   background-size: 22px 22px;
-  padding-block: clamp(2.5rem, 1.6rem + 4vw, 5.5rem) clamp(4.5rem, 3.5rem + 4vw, 7rem);
+  padding-block: clamp(2.5rem, 1.6rem + 4vw, 5.5rem) clamp(3rem, 2.2rem + 3vw, 5rem);
 }
 .hero-grid { display: grid; grid-template-columns: minmax(0, 1fr); gap: clamp(2.75rem, 2rem + 3vw, 4rem); align-items: center; }
 .hero-copy { display: grid; gap: 1.5rem; justify-items: start; container-type: inline-size; }
@@ -547,48 +547,17 @@ main > .section + .section { border-top: var(--line) solid var(--ink); }
   .hero-caption { right: 0.5rem; font-size: 0.8125rem; }
 }
 
-/* ---------- Pasek usług (ticker) ---------- */
-.ticker {
-  position: relative;
-  z-index: 3;
-  overflow: hidden;
-  margin-block: -1.75rem;
-  padding-block: 1.25rem;
-  pointer-events: none;
+/* ---------- O co dbamy: cztery rysunki na dole nagłówka strony głównej ---------- */
+.perks { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2.5rem 1.25rem; margin-top: clamp(3.5rem, 2.5rem + 4vw, 6rem); text-align: center; }
+.perk { display: grid; justify-items: center; align-content: start; gap: 0.5rem; }
+.perk-art { width: clamp(7.5rem, 6rem + 4.5vw, 10rem); height: auto; margin-bottom: 0.5rem; overflow: visible; }
+.perk h3 { font-size: clamp(1.15rem, 1rem + 0.6vw, 1.45rem); line-height: 1.15; }
+.perk p { max-width: 16rem; font-size: var(--text-sm); line-height: 1.45; }
+@media (min-width: 64rem) {
+  .perks { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 2rem; }
 }
-.ticker-strip {
-  width: 104%;
-  margin-left: -2%;
-  padding-block: 0.8rem;
-  background: var(--ink);
-  color: #fff;
-  border-block: var(--line) solid var(--ink);
-  transform: rotate(-1.2deg);
-  pointer-events: auto;
-}
-.ticker-track { display: flex; width: max-content; animation: ticker 42s linear infinite; }
-.ticker:hover .ticker-track { animation-play-state: paused; }
-.ticker-list { display: flex; align-items: center; }
-.ticker-list li {
-  display: flex;
-  align-items: center;
-  gap: 1.6rem;
-  padding-right: 1.6rem;
-  font-family: var(--font-display);
-  font-weight: 880;
-  font-size: clamp(1.0625rem, 0.95rem + 0.6vw, 1.5rem);
-  letter-spacing: 0.01em;
-  text-transform: uppercase;
-  white-space: nowrap;
-}
-.ticker-list li::after {
-  content: "";
-  width: 1.15rem;
-  height: 1.15rem;
-  background: var(--yellow);
-  clip-path: polygon(50% 0, 61% 39%, 100% 50%, 61% 61%, 50% 100%, 39% 61%, 0 50%, 39% 39%);
-}
-@keyframes ticker { to { transform: translateX(-50%); } }
+/* szachownica pod nagłówkiem: dwa rzędy pól 14 px */
+.checker { height: 28px; background: repeating-conic-gradient(var(--ink) 0 25%, var(--paper) 0 50%) 0 0 / 28px 28px; }
 
 /* ---------- Dla kogo ---------- */
 .audience { display: grid; gap: 1.5rem; }
@@ -1286,6 +1255,5 @@ main > .section + .section { border-top: var(--line) solid var(--ink); }
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
   }
-  .ticker-track { animation: none; }
   .btn:active, .direct a:active { transform: none; }
 }
