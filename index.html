@@ -3,16 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Shoprise — sklepy internetowe, Google Ads i Meta Ads</title>
-<meta name="description" content="Budujemy sklepy na Shopify i Shoperze i sprowadzamy do nich klientów kampaniami Google Ads i Meta Ads. Każdy projekt wyceniamy indywidualnie i bezpłatnie.">
+<title>Shoprise — sklepy i strony internetowe, Google Ads i Meta Ads</title>
+<meta name="description" content="Sklepy na Shopify i Shoperze, strony internetowe dla firm i kampanie Google Ads i Meta Ads. Z okolic Wieruszowa, dla firm z całej Polski. Bezpłatna wycena.">
 <link rel="canonical" href="https://shoprise.pl/">
 <meta name="theme-color" content="#FFFFFF">
 <meta name="color-scheme" content="light">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="pl_PL">
 <meta property="og:site_name" content="Shoprise">
-<meta property="og:title" content="Shoprise — sklepy internetowe i kampanie Google Ads i Meta Ads">
-<meta property="og:description" content="Budujemy sklepy na Shopify i Shoperze i sprowadzamy do nich klientów. Bezpłatna, indywidualna wycena.">
+<meta property="og:title" content="Shoprise — sklepy i strony internetowe, kampanie Google Ads i Meta Ads">
+<meta property="og:description" content="Budujemy sklepy na Shopify i Shoperze oraz strony internetowe dla firm, a klientów sprowadzamy kampaniami Google Ads i Meta Ads. Bezpłatna, indywidualna wycena.">
 <meta property="og:url" content="https://shoprise.pl/">
 <meta property="og:image" content="https://shoprise.pl/shoprise_og.png?v=3">
 <meta property="og:image:type" content="image/png">
@@ -27,19 +27,54 @@
 <link rel="preload" href="fonts/archivo-display.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="fonts/archivo.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/realizacje/amormeble-strona-glowna.webp" as="image" type="image/webp">
-<link rel="stylesheet" href="styles.css?v=20261016-1">
+<link rel="stylesheet" href="styles.css?v=20261026-1">
 <script>document.documentElement.classList.add('js')</script>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "Shoprise",
-  "url": "https://shoprise.pl/",
-  "logo": "https://shoprise.pl/assets/marka/shoprise-znak-512.png",
-  "email": "biuro@shoprise.pl",
-  "telephone": "+48730329052",
-  "description": "Sklepy internetowe na Shopify i Shoperze, strony firmowe oraz kampanie Google Ads i Meta Ads.",
-  "areaServed": "PL"
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://shoprise.pl/#organization",
+      "name": "Shoprise",
+      "url": "https://shoprise.pl/",
+      "logo": "https://shoprise.pl/assets/marka/shoprise-znak-512.png",
+      "email": "biuro@shoprise.pl",
+      "telephone": "+48730329052",
+      "description": "Sklepy internetowe na Shopify i Shoperze, strony internetowe dla firm oraz kampanie Google Ads i Meta Ads.",
+      "areaServed": [
+        { "@type": "Country", "name": "Polska" },
+        { "@type": "City", "name": "Wieruszów" },
+        { "@type": "City", "name": "Wieluń" },
+        { "@type": "City", "name": "Kępno" }
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "sales",
+        "telephone": "+48730329052",
+        "email": "biuro@shoprise.pl",
+        "areaServed": "PL",
+        "availableLanguage": "pl"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Oferta Shoprise",
+        "itemListElement": [
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Sklepy internetowe na Shopify i Shoperze", "url": "https://shoprise.pl/sklepy-internetowe" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Strony internetowe dla firm", "url": "https://shoprise.pl/strony-internetowe" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Kampanie Google Ads i Meta Ads" } }
+        ]
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://shoprise.pl/#website",
+      "name": "Shoprise",
+      "url": "https://shoprise.pl/",
+      "inLanguage": "pl-PL",
+      "publisher": { "@id": "https://shoprise.pl/#organization" }
+    }
+  ]
 }
 </script>
 </head>
@@ -80,9 +115,9 @@
     <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span class="menu-icon" aria-hidden="true"></span><span class="menu-toggle-label">Menu</span></button>
     <nav class="site-nav" id="site-nav" aria-label="Główna">
       <ul class="nav-list" role="list">
-        <li><a href="#uslugi">Usługi</a></li>
-        <li><a href="#realizacje">Realizacje</a></li>
-        <li><a href="#proces">Jak działamy</a></li>
+        <li><a href="sklepy-internetowe">Sklepy internetowe</a></li>
+        <li><a href="strony-internetowe">Strony internetowe</a></li>
+        <li><a href="realizacje">Realizacje</a></li>
         <li><a href="#wycena">Cena</a></li>
         <li><a href="#faq">FAQ</a></li>
         <li class="nav-cta"><a class="btn btn-primary" href="#kontakt">Bezpłatna wycena</a></li>
@@ -96,16 +131,16 @@
   <section class="hero" aria-labelledby="hero-title">
     <div class="wrap hero-grid">
       <div class="hero-copy">
-        <p class="kicker">Shopify i Shoper · Google Ads · Meta Ads</p>
+        <p class="kicker">Sklepy i&nbsp;strony internetowe · Google Ads · Meta Ads</p>
         <h1 id="hero-title">Budujemy sklepy internetowe i&nbsp;<span class="hl">sprowadzamy do nich klientów.</span></h1>
-        <p class="lead">Dla firm, które sprzedają stacjonarnie albo przez Allegro, a&nbsp;chcą sprzedawać we własnym sklepie. Sklep stawiamy na Shopify lub Shoperze, a&nbsp;klientów sprowadzamy kampaniami Google Ads i&nbsp;Meta Ads.</p>
+        <p class="lead">Dla firm, które sprzedają stacjonarnie albo przez Allegro, a&nbsp;chcą sprzedawać we własnym sklepie. Stawiamy <a href="sklepy-internetowe">sklepy na Shopify i&nbsp;Shoperze</a> oraz <a href="strony-internetowe">strony internetowe dla firm</a>, a&nbsp;klientów sprowadzamy kampaniami Google Ads i&nbsp;Meta Ads.</p>
         <div class="hero-actions">
           <a class="btn btn-dark btn-lg" href="#kontakt">Poproś o&nbsp;bezpłatną wycenę <svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a>
-          <a class="btn btn-lg" href="#realizacje">Zobacz realizację</a>
+          <a class="btn btn-lg" href="realizacje">Zobacz realizację</a>
         </div>
         <ul class="trust" role="list">
           <li><svg class="ic" aria-hidden="true"><use href="#i-clock"/></svg>Odpowiadamy w&nbsp;ciągu 24&nbsp;godzin</li>
-          <li><a href="tel:+48730329052"><svg class="ic" aria-hidden="true"><use href="#i-phone"/></svg>Zadzwoń: 730&nbsp;329&nbsp;052</a></li>
+          <li><a href="tel:+48730329052"><svg class="ic" aria-hidden="true"><use href="#i-phone"/></svg>Zadzwoń:&nbsp;730&nbsp;329&nbsp;052</a></li>
           <li><svg class="ic" aria-hidden="true"><use href="#i-half"/></svg>50% zaliczki, 50% po odbiorze</li>
         </ul>
       </div>
@@ -115,13 +150,13 @@
           <div class="window-bar" aria-hidden="true"><span class="window-dots"><i></i><i></i><i></i></span><span class="window-url">amormeble.pl</span></div>
           <img src="assets/realizacje/amormeble-strona-glowna.webp" width="800" height="500" alt="Strona główna sklepu AMOR meble z kolekcją mebli do sypialni" fetchpriority="high" decoding="async">
         </div>
-        <figcaption class="sticker hero-caption">Nasza realizacja: sklep AMOR&nbsp;meble</figcaption>
         <div class="price-tag hero-tag">
           <svg class="price-tag-shape" viewBox="0 0 300 140" aria-hidden="true"><use href="#i-tag"/><circle cx="54" cy="70" r="10"/><path class="price-tag-string" d="M54 70C40 40 22 20 -18 8"/></svg>
           <span class="price-tag-label">Cena</span>
           <span class="price-tag-value">Wycena indywidualna</span>
           <span class="price-tag-note">bezpłatnie</span>
         </div>
+        <figcaption class="sticker hero-caption"><a href="realizacje">Nasza realizacja: sklep AMOR&nbsp;meble</a></figcaption>
       </figure>
     </div>
     <div class="wrap">
@@ -247,52 +282,69 @@
   <section class="section section-sky" id="uslugi" aria-labelledby="uslugi-title">
     <div class="wrap">
       <div class="section-head">
-        <h2 id="uslugi-title">Co robimy</h2>
-        <p>Budujemy sklep, sprowadzamy do niego klientów i&nbsp;zajmujemy się nim po starcie. Nie musisz szukać osobno wykonawcy sklepu i&nbsp;agencji reklamowej.</p>
+        <h2 id="uslugi-title">Sklep czy strona internetowa?</h2>
+        <p>Robimy jedno i&nbsp;drugie. Wybór zależy od tego, jak kupują Twoi klienci: od razu, z&nbsp;koszykiem i&nbsp;płatnością, czy najpierw dzwonią albo proszą o&nbsp;wycenę.</p>
       </div>
-      <div class="service-groups">
-        <div class="service-group">
-          <h3 class="group-label">Sklep i&nbsp;strona</h3>
-          <ul class="services" role="list">
-            <li class="card service is-link">
-              <span class="icon-tile" style="--tile:var(--yellow)"><svg class="ic" aria-hidden="true"><use href="#i-cart"/></svg></span>
-              <h4>Sklepy na Shopify i&nbsp;Shoperze</h4>
-              <p>Projekt i&nbsp;wdrożenie z&nbsp;płatnościami, dostawami i&nbsp;konfiguratorami produktów pod Twój asortyment.</p>
-              <a class="more" href="sklepy-internetowe">Więcej o&nbsp;sklepach <svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a>
-            </li>
-            <li class="card service is-link">
-              <span class="icon-tile" style="--tile:var(--mint)"><svg class="ic" aria-hidden="true"><use href="#i-window"/></svg></span>
-              <h4>Strony internetowe</h4>
-              <p>Wizytówki, strony firmowe i&nbsp;serwisy, które zbierają zapytania ofertowe. Szybkie, lekkie i&nbsp;widoczne w&nbsp;Google.</p>
-              <a class="more" href="strony-internetowe">Więcej o&nbsp;stronach <svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a>
-            </li>
-            <li class="card service">
-              <span class="icon-tile" style="--tile:var(--lilac)"><svg class="ic" aria-hidden="true"><use href="#i-wrench"/></svg></span>
-              <h4>Prowadzenie po starcie</h4>
-              <p>Aktualizacje, nowe podstrony, poprawki i&nbsp;rozwój sklepu. Piszesz, czego potrzebujesz, a&nbsp;my to wdrażamy.</p>
-            </li>
+      <div class="offers">
+        <article class="card offer" aria-labelledby="offer-sklep">
+          <div class="offer-top">
+            <span class="icon-tile" style="--tile:var(--yellow)"><svg class="ic" aria-hidden="true"><use href="#i-cart"/></svg></span>
+            <p class="sticker" style="--sticker:var(--mint)">Klient kupuje od razu</p>
+          </div>
+          <h3 id="offer-sklep">Sklep internetowy</h3>
+          <p class="offer-for">Gdy klient ma sam wybrać produkt, zapłacić i&nbsp;dostać paczkę, bez dzwonienia do Ciebie.</p>
+          <ul class="checklist" role="list">
+            <li>Koszyk i&nbsp;płatności: BLIK, karty, szybkie przelewy</li>
+            <li>Dostawy: paczkomaty i&nbsp;kurierzy</li>
+            <li>Produkty i&nbsp;zamówienia w&nbsp;prostym panelu</li>
+            <li>Konfiguratory produktów, np. mebli na wymiar</li>
           </ul>
-        </div>
-        <div class="service-group">
-          <h3 class="group-label">Reklama i&nbsp;sprzedaż</h3>
-          <ul class="services" role="list">
-            <li class="card service">
-              <span class="icon-tile" style="--tile:var(--yellow)"><svg class="ic" aria-hidden="true"><use href="#i-search"/></svg></span>
-              <h4>Kampanie Google Ads</h4>
-              <p>Docieramy do osób, które już szukają Twoich produktów w&nbsp;Google. Kampanie produktowe i&nbsp;w&nbsp;wyszukiwarce, rozliczane z&nbsp;wyników.</p>
-            </li>
-            <li class="card service">
-              <span class="icon-tile" style="--tile:var(--coral)"><svg class="ic" aria-hidden="true"><use href="#i-megaphone"/></svg></span>
-              <h4>Kampanie Meta Ads</h4>
-              <p>Reklamy na Facebooku i&nbsp;Instagramie, które budują popyt i&nbsp;sprzedają, z&nbsp;pełną konfiguracją piksela i&nbsp;pomiaru konwersji.</p>
-            </li>
-            <li class="card service">
-              <span class="icon-tile" style="--tile:var(--mint)"><svg class="ic" aria-hidden="true"><use href="#i-chart"/></svg></span>
-              <h4>Raport co miesiąc</h4>
-              <p>Co miesiąc dostajesz raport z&nbsp;wyników kampanii, więc wiesz, na co idzie budżet reklamowy.</p>
-            </li>
+          <p class="offer-meta">Na Shopify albo Shoperze. Przykład: <a href="realizacje">sklep AMOR meble</a>.</p>
+          <a class="btn btn-dark" href="sklepy-internetowe">Więcej o&nbsp;sklepach internetowych <svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        </article>
+        <article class="card offer" aria-labelledby="offer-strona">
+          <div class="offer-top">
+            <span class="icon-tile" style="--tile:var(--mint)"><svg class="ic" aria-hidden="true"><use href="#i-window"/></svg></span>
+            <p class="sticker" style="--sticker:var(--lilac)">Klient najpierw pyta</p>
+          </div>
+          <h3 id="offer-strona">Strona internetowa</h3>
+          <p class="offer-for">Gdy klient ma zadzwonić albo wysłać zapytanie: usługi, produkcja na zamówienie, oferta dla firm.</p>
+          <ul class="checklist" role="list">
+            <li>Oferta, zakres usług i&nbsp;zdjęcia Twoich prac</li>
+            <li>Formularz, telefon i&nbsp;mapa dojazdu</li>
+            <li>Wizytówka Google i&nbsp;frazy z&nbsp;Twojej okolicy</li>
+            <li>Rozbudowa o&nbsp;sklep, gdy przyjdzie pora</li>
           </ul>
-        </div>
+          <p class="offer-meta">Wizytówka, strona firmowa albo serwis z&nbsp;podstronami.</p>
+          <a class="btn btn-dark" href="strony-internetowe">Więcej o&nbsp;stronach internetowych <svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        </article>
+      </div>
+      <p class="note"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><span>Nie wiesz, co wybrać? Często zaczyna się od strony, a&nbsp;sklep dochodzi później. Po bezpłatnej analizie doradzimy, od czego zacząć, a&nbsp;stronę zaprojektujemy tak, żeby sklepu nie budować od nowa.</span></p>
+
+      <div class="service-group service-group-more" id="kampanie">
+        <h3 class="group-label">Do sklepu i&nbsp;strony</h3>
+        <ul class="services services-4" role="list">
+          <li class="card service">
+            <span class="icon-tile" style="--tile:var(--yellow)"><svg class="ic" aria-hidden="true"><use href="#i-search"/></svg></span>
+            <h4>Kampanie Google Ads</h4>
+            <p>Docieramy do osób, które już szukają Twoich produktów w&nbsp;Google. Kampanie produktowe i&nbsp;w&nbsp;wyszukiwarce, rozliczane z&nbsp;wyników.</p>
+          </li>
+          <li class="card service">
+            <span class="icon-tile" style="--tile:var(--coral)"><svg class="ic" aria-hidden="true"><use href="#i-megaphone"/></svg></span>
+            <h4>Kampanie Meta Ads</h4>
+            <p>Reklamy na Facebooku i&nbsp;Instagramie, które budują popyt i&nbsp;sprzedają, z&nbsp;pełną konfiguracją piksela i&nbsp;pomiaru konwersji.</p>
+          </li>
+          <li class="card service">
+            <span class="icon-tile" style="--tile:var(--lilac)"><svg class="ic" aria-hidden="true"><use href="#i-wrench"/></svg></span>
+            <h4>Prowadzenie po starcie</h4>
+            <p>Aktualizacje, nowe podstrony, poprawki i&nbsp;rozwój sklepu albo strony. Piszesz, czego potrzebujesz, a&nbsp;my to wdrażamy.</p>
+          </li>
+          <li class="card service">
+            <span class="icon-tile" style="--tile:var(--mint)"><svg class="ic" aria-hidden="true"><use href="#i-chart"/></svg></span>
+            <h4>Raport co miesiąc</h4>
+            <p>Co miesiąc dostajesz raport z&nbsp;wyników kampanii, więc wiesz, na co idzie budżet reklamowy.</p>
+          </li>
+        </ul>
       </div>
     </div>
   </section>
@@ -333,14 +385,17 @@
             <strong>PageSpeed Insights: wydajność 99 na komputerze i&nbsp;90 na telefonie</strong>
             <span>SEO 100, dostępność 100, agenci AI 4/4. Na prawdziwych wizytach z&nbsp;telefonów główna treść w&nbsp;1,3&nbsp;s.</span>
           </a>
-          <a class="btn btn-dark case-link" href="https://amormeble.pl/" target="_blank" rel="noopener">Otwórz amormeble.pl <svg class="ic" aria-hidden="true"><use href="#i-arrow-up"/></svg><span class="visually-hidden"> (otwiera się w&nbsp;nowej karcie)</span></a>
+          <div class="case-actions">
+            <a class="btn btn-dark" href="realizacje">Zobacz całą realizację <svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            <a class="btn" href="https://amormeble.pl/" target="_blank" rel="noopener">Otwórz amormeble.pl <svg class="ic" aria-hidden="true"><use href="#i-arrow-up"/></svg><span class="visually-hidden"> (otwiera się w&nbsp;nowej karcie)</span></a>
+          </div>
         </div>
       </article>
 
       <aside class="card next-case" aria-labelledby="next-title">
         <div>
           <h3 id="next-title">Następny może być Twój sklep</h3>
-          <p>Opisz, co sprzedajesz. Sprawdzimy, czy sprzedaż online ma sens, i&nbsp;przygotujemy wycenę.</p>
+          <p>Opisz, co sprzedajesz. Sprawdzimy, czy lepszy będzie sklep, czy strona internetowa, i&nbsp;przygotujemy wycenę.</p>
         </div>
         <a class="btn btn-primary" href="#kontakt">Poproś o&nbsp;wycenę</a>
       </aside>
@@ -489,6 +544,10 @@
       </div>
       <div class="faq">
         <details>
+          <summary>Co wybrać: sklep internetowy czy stronę internetową?</summary>
+          <div class="faq-a"><p>Sklep, gdy klient ma kupić od razu: sam wybrać produkt, zapłacić i&nbsp;dostać paczkę. Stronę, gdy klient najpierw dzwoni albo prosi o&nbsp;wycenę, np. przy usługach i&nbsp;produkcji na zamówienie. Zobacz, co obejmują <a href="sklepy-internetowe">sklepy internetowe</a> i&nbsp;<a href="strony-internetowe">strony internetowe</a>.</p></div>
+        </details>
+        <details>
           <summary>Ile kosztuje sklep internetowy?</summary>
           <div class="faq-a"><p>Każdy sklep wyceniamy indywidualnie, bo cena zależy od zakresu: liczby produktów, projektu graficznego, integracji i&nbsp;tego, czy prowadzimy też kampanie. Wycenę dostajesz bezpłatnie, razem z&nbsp;terminem startu i&nbsp;wszystkimi kosztami stałymi.</p></div>
         </details>
@@ -515,6 +574,10 @@
         <details>
           <summary>Ile trwa uruchomienie sklepu?</summary>
           <div class="faq-a"><p>Prosty sklep startuje po ok.&nbsp;2&nbsp;tygodniach od otrzymania materiałów (zdjęć, opisów, logo). Większe wdrożenia z&nbsp;integracjami trwają do&nbsp;3–4&nbsp;tygodni. Dokładny termin dostajesz w&nbsp;wycenie i&nbsp;trzymamy się go.</p></div>
+        </details>
+        <details>
+          <summary>Czy pracujecie tylko z&nbsp;firmami z&nbsp;okolic Wieruszowa?</summary>
+          <div class="faq-a"><p>Nie. Jesteśmy z&nbsp;okolic Wieruszowa i&nbsp;chętnie pracujemy z&nbsp;firmami z&nbsp;Wieruszowa, Wielunia, Kępna i&nbsp;okolic, ale sklepy i&nbsp;strony internetowe robimy dla firm z&nbsp;całej Polski. Rozmowy, akceptacje projektu i&nbsp;szkolenie z&nbsp;panelu mogą odbywać się zdalnie.</p></div>
         </details>
       </div>
     </div>
@@ -567,7 +630,7 @@
     <div class="footer-top">
       <div class="footer-brand">
         <a class="footer-logo" href="./"><img src="assets/shoprise-logo.svg" alt="Shoprise, strona główna" width="320" height="62" loading="lazy"></a>
-        <p>Sklepy internetowe na Shopify i&nbsp;Shoperze, strony firmowe oraz kampanie Google Ads i&nbsp;Meta Ads.</p>
+        <p>Sklepy internetowe na Shopify i&nbsp;Shoperze, strony internetowe dla firm oraz kampanie Google Ads i&nbsp;Meta Ads. Z&nbsp;okolic Wieruszowa, dla firm z&nbsp;całej Polski.</p>
       </div>
       <a class="btn btn-dark btn-lg" href="#kontakt">Poproś o&nbsp;bezpłatną wycenę <svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a>
     </div>
@@ -577,13 +640,14 @@
         <ul role="list">
           <li><a href="sklepy-internetowe">Sklepy internetowe</a></li>
           <li><a href="strony-internetowe">Strony internetowe</a></li>
-          <li><a href="#uslugi">Kampanie Google i&nbsp;Meta</a></li>
+          <li><a href="#kampanie">Kampanie Google i&nbsp;Meta</a></li>
         </ul>
       </nav>
       <nav class="footer-card" aria-labelledby="footer-info">
         <h2 class="footer-title" id="footer-info" style="--tag:var(--mint)">Informacje</h2>
         <ul role="list">
-          <li><a href="#realizacje">Realizacje</a></li>
+          <li><a href="realizacje">Realizacje</a></li>
+          <li><a href="#uslugi">Sklep czy strona?</a></li>
           <li><a href="#proces">Jak działamy</a></li>
           <li><a href="#wycena">Cena</a></li>
           <li><a href="#faq">Częste pytania</a></li>
