@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+  <title>Blog Shoprise</title>
+  <link>https://shoprise.pl/blog/</link>
+  <description>Jak klienci znajdują sklepy i firmy w Google, ChatGPT i odpowiedziach AI. SEO, AEO, GEO i zakupy przez agentów AI, konkretnie i ze źródłami.</description>
+  <language>pl-PL</language>
+  <lastBuildDate>Mon, 26 Oct 2026 08:00:00 +0100</lastBuildDate>
+  <atom:link href="https://shoprise.pl/blog/feed.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>SEO, AEO i GEO: czym się różnią i co z nich ma Twój sklep</title>
+    <link>https://shoprise.pl/blog/seo-aeo-geo</link>
+    <guid isPermaLink="true">https://shoprise.pl/blog/seo-aeo-geo</guid>
+    <pubDate>Mon, 26 Oct 2026 08:00:00 +0100</pubDate>
+    <category>SEO i AI</category>
+    <description>SEO, AEO i GEO po ludzku: czym się różnią, skąd AI bierze odpowiedzi i co mały sklep internetowy powinien zrobić w 2026 roku, a czego nie musi.</description>
+  </item>
+  <item>
+    <title>Pozycjonowanie w ChatGPT i AI Overviews: jak sprawić, żeby AI polecało Twoją firmę</title>
+    <link>https://shoprise.pl/blog/pozycjonowanie-w-chatgpt</link>
+    <guid isPermaLink="true">https://shoprise.pl/blog/pozycjonowanie-w-chatgpt</guid>
+    <pubDate>Mon, 26 Oct 2026 08:00:00 +0100</pubDate>
+    <category>Poradnik</category>
+    <description>Jak sprawić, żeby ChatGPT, Gemini, Copilot i AI Overviews polecały Twój sklep: indeksacja w Google i Bing, boty AI w robots.txt, treści i dane produktowe.</description>
+  </item>
+  <item>
+    <title>Zakupy przez agentów AI: co to zmienia dla sklepów internetowych w Polsce</title>
+    <link>https://shoprise.pl/blog/zakupy-przez-agentow-ai</link>
+    <guid isPermaLink="true">https://shoprise.pl/blog/zakupy-przez-agentow-ai</guid>
+    <pubDate>Mon, 26 Oct 2026 08:00:00 +0100</pubDate>
+    <category>Przyszłość e-commerce</category>
+    <description>Zakupy w ChatGPT, Gemini i Copilot, agenci w sklepach Shopify: co już działa, co dotrze do Polski i jak przygotować sklep internetowy na klientów-agentów.</description>
+  </item>
+</channel>
+</rss>
