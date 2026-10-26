@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Sklepy internetowe na Shopify i Shoperze — Shoprise</title>
-<meta name="description" content="Projektujemy i wdrażamy sklepy na Shopify i Shoperze, z płatnościami, dostawami i kampaniami Google Ads i Meta Ads. Każdy projekt wyceniamy indywidualnie i bezpłatnie.">
+<meta name="description" content="Projektujemy i wdrażamy sklepy na Shopify i Shoperze, z płatnościami, dostawami i kampaniami Google Ads i Meta Ads. Bezpłatna, indywidualna wycena.">
 <link rel="canonical" href="https://shoprise.pl/sklepy-internetowe">
 <meta name="theme-color" content="#FFFFFF">
 <meta name="color-scheme" content="light">
@@ -26,24 +26,37 @@
 <link rel="apple-touch-icon" href="shoprise_favicon_180.png?v=2">
 <link rel="preload" href="fonts/archivo-display.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="fonts/archivo.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="styles.css?v=20261016-1">
+<link rel="stylesheet" href="styles.css?v=20261026-1">
 <script>document.documentElement.classList.add('js')</script>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
+  "@graph": [
     {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Strona główna",
-      "item": "https://shoprise.pl/"
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Strona główna",
+          "item": "https://shoprise.pl/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Sklepy internetowe",
+          "item": "https://shoprise.pl/sklepy-internetowe"
+        }
+      ]
     },
     {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "Sklepy internetowe",
-      "item": "https://shoprise.pl/sklepy-internetowe"
+      "@type": "Service",
+      "name": "Sklepy internetowe na Shopify i Shoperze",
+      "serviceType": "Projektowanie i wdrażanie sklepów internetowych",
+      "url": "https://shoprise.pl/sklepy-internetowe",
+      "description": "Projekt i wdrożenie sklepu na Shopify lub Shoperze, z płatnościami, dostawami i kampaniami Google Ads i Meta Ads.",
+      "areaServed": { "@type": "Country", "name": "Polska" },
+      "provider": { "@type": "Organization", "@id": "https://shoprise.pl/#organization", "name": "Shoprise", "url": "https://shoprise.pl/" }
     }
   ]
 }
@@ -88,9 +101,9 @@
     <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span class="menu-icon" aria-hidden="true"></span><span class="menu-toggle-label">Menu</span></button>
     <nav class="site-nav" id="site-nav" aria-label="Główna">
       <ul class="nav-list" role="list">
-        <li><a href="./#uslugi">Usługi</a></li>
-        <li><a href="./#realizacje">Realizacje</a></li>
-        <li><a href="./#proces">Jak działamy</a></li>
+        <li><a href="sklepy-internetowe" aria-current="page">Sklepy internetowe</a></li>
+        <li><a href="strony-internetowe">Strony internetowe</a></li>
+        <li><a href="realizacje">Realizacje</a></li>
         <li><a href="./#wycena">Cena</a></li>
         <li><a href="./#faq">FAQ</a></li>
         <li class="nav-cta"><a class="btn btn-primary" href="./#kontakt">Bezpłatna wycena</a></li>
@@ -119,7 +132,7 @@
         </div>
         <ul class="trust" role="list">
           <li><svg class="ic" aria-hidden="true"><use href="#i-clock"/></svg>Odpowiadamy w&nbsp;ciągu 24&nbsp;godzin</li>
-          <li><a href="tel:+48730329052"><svg class="ic" aria-hidden="true"><use href="#i-phone"/></svg>Zadzwoń: 730&nbsp;329&nbsp;052</a></li>
+          <li><a href="tel:+48730329052"><svg class="ic" aria-hidden="true"><use href="#i-phone"/></svg>Zadzwoń:&nbsp;730&nbsp;329&nbsp;052</a></li>
           <li><svg class="ic" aria-hidden="true"><use href="#i-half"/></svg>50% zaliczki, 50% po odbiorze</li>
         </ul>
       </div>
@@ -199,7 +212,7 @@
           <h2 id="teaser-title">Sklep AMOR meble na Shopify</h2>
           <p>Meble do salonu, jadalni i&nbsp;sypialni. Karty produktów z&nbsp;wymiarami i&nbsp;rysunkami technicznymi, poradnik zakupowy pod SEO oraz pomiar w&nbsp;GA4 i&nbsp;Google Ads.</p>
           <div class="teaser-actions">
-            <a class="btn btn-dark" href="./#realizacje">Zobacz realizację</a>
+            <a class="btn btn-dark" href="realizacje">Zobacz całą realizację</a>
             <a class="btn" href="https://amormeble.pl/" target="_blank" rel="noopener">Otwórz amormeble.pl <svg class="ic" aria-hidden="true"><use href="#i-arrow-up"/></svg><span class="visually-hidden"> (otwiera się w&nbsp;nowej karcie)</span></a>
           </div>
         </div>
@@ -265,6 +278,27 @@
     </div>
   </section>
 
+  <section class="section" id="konfiguratory" aria-labelledby="konfiguratory-title">
+    <div class="wrap">
+      <article class="teaser teaser-flat" aria-labelledby="konfiguratory-title">
+        <div class="teaser-visual">
+          <div class="phone">
+            <img src="assets/realizacje/amormeble-konfigurator-telefon-375.webp" srcset="assets/realizacje/amormeble-konfigurator-telefon-375.webp 375w, assets/realizacje/amormeble-konfigurator-telefon-750.webp 750w" sizes="(min-width: 48rem) 10.5rem, 7rem" width="375" height="812" loading="lazy" decoding="async" alt="Konfigurator łóżka SETA w sklepie AMOR meble na telefonie: po dodaniu stelaża za 299 zł cena rośnie do 1998 zł">
+          </div>
+        </div>
+        <div class="teaser-body">
+          <p class="sticker" style="--sticker:var(--coral)">Kochamy konfiguratory</p>
+          <h2 id="konfiguratory-title">Konfigurator produktu w&nbsp;sklepie internetowym</h2>
+          <p>Gdy produkt ma warianty, konfigurator prowadzi klienta krok po kroku i&nbsp;dolicza cenę każdej opcji. W&nbsp;sklepie AMOR meble łóżko SETA kosztuje od 1&nbsp;499&nbsp;zł, a&nbsp;z&nbsp;większym rozmiarem, pojemnikiem i&nbsp;szafką nocną 2&nbsp;648&nbsp;zł. Konfiguratory robimy w&nbsp;sklepach na Shopify i&nbsp;Shoperze, np. dla mebli na wymiar, tapicerki i&nbsp;produktów personalizowanych.</p>
+          <div class="teaser-actions">
+            <a class="btn btn-dark" href="realizacje#konfigurator">Zobacz konfigurator łóżka SETA</a>
+            <a class="btn" href="https://amormeble.pl/products/lozko-tapicerowane-seta-160" target="_blank" rel="noopener">Wypróbuj na amormeble.pl <svg class="ic" aria-hidden="true"><use href="#i-arrow-up"/></svg><span class="visually-hidden"> (otwiera się w&nbsp;nowej karcie)</span></a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
   <section class="section section-sky" id="platformy" aria-labelledby="platformy-title">
     <div class="wrap">
       <div class="section-head">
@@ -295,6 +329,14 @@
           </ul>
         </article>
       </div>
+
+      <aside class="card next-case" aria-labelledby="cross-title">
+        <div>
+          <h3 id="cross-title">A&nbsp;może wystarczy strona?</h3>
+          <p>Jeśli klienci najpierw dzwonią albo proszą o&nbsp;wycenę, nie potrzebujesz koszyka. Wtedy lepsza będzie strona internetowa, którą później rozbudujemy o&nbsp;sklep.</p>
+        </div>
+        <a class="btn btn-primary" href="strony-internetowe">Więcej o&nbsp;stronach internetowych <svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      </aside>
     </div>
   </section>
 
@@ -324,6 +366,14 @@
         <details>
           <summary>Czy będę mógł samodzielnie dodawać produkty?</summary>
           <div class="faq-a"><p>Tak. Shoper i&nbsp;Shopify mają proste panele: dodasz produkt, zmienisz cenę czy opis bez naszej pomocy. Na start robimy krótkie szkolenie, a&nbsp;jeśli wolisz to oddelegować, zajmiemy się tym w&nbsp;ramach prowadzenia sklepu.</p></div>
+        </details>
+        <details>
+          <summary>Czy zrobicie konfigurator produktu, np. mebli na wymiar?</summary>
+          <div class="faq-a"><p>Tak. Konfigurator prowadzi klienta przez opcje produktu krok po kroku i&nbsp;od razu pokazuje cenę, tak jak <a href="realizacje#konfigurator">konfigurator łóżka SETA</a> w&nbsp;sklepie AMOR meble. Koszt zależy od liczby opcji i&nbsp;reguł cenowych, dlatego wyceniamy go razem ze sklepem.</p></div>
+        </details>
+        <details>
+          <summary>Czy zamiast sklepu wystarczy mi strona internetowa?</summary>
+          <div class="faq-a"><p>Jeśli klienci kupują od razu i&nbsp;chcesz przyjmować płatności online, potrzebny jest sklep. Jeśli najpierw dzwonią albo proszą o&nbsp;wycenę, np. przy produkcji na zamówienie, wystarczy <a href="strony-internetowe">strona internetowa</a>, którą później można rozbudować o&nbsp;sklep.</p></div>
         </details>
         <details>
           <summary>Kto przygotuje regulamin sklepu i&nbsp;politykę prywatności?</summary>
@@ -360,7 +410,7 @@
     <div class="footer-top">
       <div class="footer-brand">
         <a class="footer-logo" href="./"><img src="assets/shoprise-logo.svg" alt="Shoprise, strona główna" width="320" height="62" loading="lazy"></a>
-        <p>Sklepy internetowe na Shopify i&nbsp;Shoperze, strony firmowe oraz kampanie Google Ads i&nbsp;Meta Ads.</p>
+        <p>Sklepy internetowe na Shopify i&nbsp;Shoperze, strony internetowe dla firm oraz kampanie Google Ads i&nbsp;Meta Ads. Z&nbsp;okolic Wieruszowa, dla firm z&nbsp;całej Polski.</p>
       </div>
       <a class="btn btn-dark btn-lg" href="./#kontakt">Poproś o&nbsp;bezpłatną wycenę <svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a>
     </div>
@@ -370,13 +420,14 @@
         <ul role="list">
           <li><a href="sklepy-internetowe" aria-current="page">Sklepy internetowe</a></li>
           <li><a href="strony-internetowe">Strony internetowe</a></li>
-          <li><a href="./#uslugi">Kampanie Google i&nbsp;Meta</a></li>
+          <li><a href="./#kampanie">Kampanie Google i&nbsp;Meta</a></li>
         </ul>
       </nav>
       <nav class="footer-card" aria-labelledby="footer-info">
         <h2 class="footer-title" id="footer-info" style="--tag:var(--mint)">Informacje</h2>
         <ul role="list">
-          <li><a href="./#realizacje">Realizacje</a></li>
+          <li><a href="realizacje">Realizacje</a></li>
+          <li><a href="./#uslugi">Sklep czy strona?</a></li>
           <li><a href="./#proces">Jak działamy</a></li>
           <li><a href="./#wycena">Cena</a></li>
           <li><a href="./#faq">Częste pytania</a></li>
