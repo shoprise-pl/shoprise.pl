@@ -5,8 +5,64 @@
   <link>https://shoprise.pl/blog/</link>
   <description>Jak klienci znajdują sklepy i firmy w Google, ChatGPT i odpowiedziach AI. SEO, AEO, GEO i zakupy przez agentów AI, konkretnie i ze źródłami.</description>
   <language>pl-PL</language>
-  <lastBuildDate>Mon, 16 Nov 2026 12:00:00 +0100</lastBuildDate>
+  <lastBuildDate>Mon, 16 Nov 2026 14:00:00 +0100</lastBuildDate>
   <atom:link href="https://shoprise.pl/blog/feed.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>Allegro czy własny sklep internetowy: ile kosztuje sprzedaż i kiedy mieć oba</title>
+    <link>https://shoprise.pl/blog/allegro-czy-wlasny-sklep</link>
+    <guid isPermaLink="true">https://shoprise.pl/blog/allegro-czy-wlasny-sklep</guid>
+    <pubDate>Mon, 16 Nov 2026 14:00:00 +0100</pubDate>
+    <category>Platformy</category>
+    <description>Allegro czy własny sklep? Prowizje Allegro i opłaty Shopify na liczbach, zasady dotyczące danych klientów i sposób na połączenie obu kanałów.</description>
+  </item>
+  <item>
+    <title>Ile kosztuje sklep na Shopify: abonament, prowizje, motyw i aplikacje</title>
+    <link>https://shoprise.pl/blog/ile-kosztuje-sklep-na-shopify</link>
+    <guid isPermaLink="true">https://shoprise.pl/blog/ile-kosztuje-sklep-na-shopify</guid>
+    <pubDate>Mon, 16 Nov 2026 14:00:00 +0100</pubDate>
+    <category>Platformy</category>
+    <description>Ile kosztuje sklep na Shopify w Polsce: abonament w złotych, prowizje za BLIK i karty, motyw, aplikacje i domena. Przykład policzony na cenniku.</description>
+  </item>
+  <item>
+    <title>Konfigurator produktu w sklepie internetowym: kiedy się opłaca i jak go zbudować</title>
+    <link>https://shoprise.pl/blog/konfigurator-produktu-w-sklepie-internetowym</link>
+    <guid isPermaLink="true">https://shoprise.pl/blog/konfigurator-produktu-w-sklepie-internetowym</guid>
+    <pubDate>Mon, 16 Nov 2026 14:00:00 +0100</pubDate>
+    <category>Poradnik</category>
+    <description>Konfigurator produktu w sklepie: kiedy ma sens, cztery sposoby budowy w Shopify, limit 3 opcji i 2048 wariantów oraz przykład z cenami ze sklepu.</description>
+  </item>
+  <item>
+    <title>Sprzedaż za granicę: gdzie w Europie działają Zakupy Google i co sprawdzić przed startem</title>
+    <link>https://shoprise.pl/blog/sprzedaz-za-granice-zakupy-google</link>
+    <guid isPermaLink="true">https://shoprise.pl/blog/sprzedaz-za-granice-zakupy-google</guid>
+    <pubDate>Mon, 16 Nov 2026 14:00:00 +0100</pubDate>
+    <category>Rynki zagraniczne</category>
+    <description>W 9 z 27 krajów Unii nie ma Zakupów Google, m.in. na Litwie, Łotwie i w Chorwacji. Mapa krajów oraz płatności i dostawa na wybranych rynkach.</description>
+  </item>
+  <item>
+    <title>Sklep na rynek czeski: Seznam, Sklik, Zboží.cz, Heureka i automaty paczkowe</title>
+    <link>https://shoprise.pl/blog/sklep-na-rynek-czeski</link>
+    <guid isPermaLink="true">https://shoprise.pl/blog/sklep-na-rynek-czeski</guid>
+    <pubDate>Mon, 16 Nov 2026 14:00:00 +0100</pubDate>
+    <category>Rynki zagraniczne</category>
+    <description>Czym rynek czeski różni się od polskiego: Seznam i Sklik, Heureka, Zboží.cz, automaty paczkowe. Jak uruchomić czeską wersję sklepu na Shopify.</description>
+  </item>
+  <item>
+    <title>Shopify czy Shoper: którą platformę wybrać dla sklepu w Polsce</title>
+    <link>https://shoprise.pl/blog/shopify-czy-shoper</link>
+    <guid isPermaLink="true">https://shoprise.pl/blog/shopify-czy-shoper</guid>
+    <pubDate>Mon, 16 Nov 2026 14:00:00 +0100</pubDate>
+    <category>Platformy</category>
+    <description>Shopify czy Shoper? Porównanie cen, sprzedaży za granicą, aplikacji i polskich integracji. Polecamy Shopify, a Shoper tylko dla sklepu na Polskę.</description>
+  </item>
+  <item>
+    <title>Microsoft Clarity w sklepie internetowym: co pokazuje, jak włączyć i na co uważać</title>
+    <link>https://shoprise.pl/blog/microsoft-clarity-w-sklepie-internetowym</link>
+    <guid isPermaLink="true">https://shoprise.pl/blog/microsoft-clarity-w-sklepie-internetowym</guid>
+    <pubDate>Mon, 16 Nov 2026 14:00:00 +0100</pubDate>
+    <category>Narzędzia</category>
+    <description>Microsoft Clarity w sklepie na Shopify: nagrania sesji, mapy cieplne, rage clicks, instalacja, zgoda na pliki cookie, raporty o ruchu z AI i ograniczenia.</description>
+  </item>
   <item>
     <title>Pozycjonowanie w Bing AI i Copilocie: jak sprawić, żeby Copilot polecał Twój sklep</title>
     <link>https://shoprise.pl/blog/pozycjonowanie-w-bing-ai-copilot</link>
