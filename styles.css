@@ -1241,6 +1241,7 @@ main > .section + .section { border-top: var(--line) solid var(--ink); }
 @media (min-width: 64rem) {
   .metrics { grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 1.25rem; }
   .metrics > :last-child:nth-child(odd) { grid-column: auto; }
+  .metrics-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 }
 .speed-source { margin-top: clamp(1.5rem, 1.25rem + 1vw, 2rem); max-width: 62rem; font-size: var(--text-sm); }
 
