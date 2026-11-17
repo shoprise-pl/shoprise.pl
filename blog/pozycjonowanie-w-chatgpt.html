@@ -241,7 +241,7 @@ Disallow: /</code></pre>
             <p>Nie dopisuj robotom wyszukiwarek AI osobnych grup z&nbsp;regułą „Allow: /”. Robot, który ma w&nbsp;robots.txt własną grupę, ignoruje reguły ogólne. Zacząłby więc wchodzić do koszyka, kasy i&nbsp;stron filtrów, które Shopify domyślnie blokuje.</p>
           </div>
           <ul>
-            <li><strong>Shopify:</strong> domyślny robots.txt nie blokuje robotów AI. Sprawdziliśmy to w&nbsp;sklepie AMOR meble. Zmiany robi się w&nbsp;szablonie robots.txt.liquid, który zastępuje plik generowany przez Shopify, więc najpierw zapisz kopię domyślnych reguł.</li>
+            <li><strong>Shopify:</strong> domyślny robots.txt nie blokuje robotów AI. Sprawdziliśmy to w&nbsp;sklepie <a href="https://amormeble.pl/">AMOR meble</a>. Zmiany robi się w&nbsp;szablonie robots.txt.liquid, który zastępuje plik generowany przez Shopify, więc najpierw zapisz kopię domyślnych reguł.</li>
             <li><strong>Google:</strong> AI Overviews i&nbsp;tryb AI są częścią wyszukiwarki, więc rządzi nimi zwykły Googlebot. Token Google-Extended nie wpływa na wyniki wyszukiwania, ale jego blokada usuwa Twoje treści także z&nbsp;odpowiedzi na żywo w&nbsp;aplikacji Gemini.</li>
             <li><strong>Search Console:</strong> od 2026 roku jest tam ustawienie, które decyduje, czy witryna pojawia się w&nbsp;AI Overviews i&nbsp;trybie AI. Sprawdź, czy nikt jej z&nbsp;nich nie wyłączył.</li>
             <li><strong>Cloudflare i&nbsp;zapory:</strong> zapora może zablokować robota mimo zgody w&nbsp;robots.txt. Cloudflare dzieli roboty AI na trzy grupy: wyszukiwarki, agentów i&nbsp;roboty trenujące. Roboty, które robią kilka rzeczy naraz, blokuje razem z&nbsp;trenującymi. Sprawdź ustawienia, jeśli z&nbsp;nich korzystasz.</li>
