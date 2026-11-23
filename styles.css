@@ -360,6 +360,16 @@ main > .section + .section { border-top: var(--line) solid var(--ink); }
 .nav-list a:not(.btn):hover,
 .nav-list a[aria-current] { background-size: 100% 0.45em; }
 .nav-list .btn { min-height: 2.75rem; padding: 0.5rem 1rem; font-size: var(--text-sm); }
+@media (min-width: 64rem) and (max-width: 82rem) {
+  .site-header > .wrap { gap: 0.75rem 1rem; }
+  .nav-list { gap: 0.25rem 0.85rem; }
+  .nav-list .btn { padding-inline: 0.8rem; }
+}
+@media (min-width: 64rem) and (max-width: 69rem) {
+  .nav-list { gap: 0.25rem 0.6rem; }
+  .nav-list a:not(.btn) { font-size: 0.8125rem; }
+  .brand img { width: 8.5rem; }
+}
 
 .menu-toggle {
   display: none;
